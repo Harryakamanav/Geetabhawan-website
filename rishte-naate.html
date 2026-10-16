@@ -1,0 +1,2063 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>रिश्ते-नाते विभाग | Rishte-Naate Vibhag — Geeta Bhawan Mandir, Kirti Nagar</title>
+  <meta name="description" content="Rishte-Naate Vibhag of Geeta Bhawan Mandir, Kirti Nagar — a trusted, traditional matrimonial and matchmaking department rooted in Indian cultural values, family dignity, and mutual trust.">
+  <link rel="icon" type="image/png" href="assets/images/favicon.png">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400;600;700&family=Noto+Serif+Devanagari:wght@400;600;700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    /* =========================================================================
+       DEDICATED LIGHT WARM ELEGANT THEME — RISHTE-NAATE VIBHAG
+       Design Override: Light, warm, elegant aesthetic distinct from the
+       dark cinematic temple experience, while preserving brand typography
+       and structural excellence.
+       ========================================================================= */
+    :root {
+      /* Primary palette overrides */
+      --bg-primary: #FFF9F0;          /* Warm Ivory / Soft Cream */
+      --bg-alt: #F5EBDD;              /* Light Champagne */
+      --bg-card: #FFFFFF;             /* Pure White card */
+      --bg-card-alt: #FFFDF9;         /* Warm Ivory card */
+      --accent-gold: #B8860B;         /* Antique Gold */
+      --accent-gold-hover: #996e08;   /* Deeper Antique Gold */
+      --accent-saffron: #D97706;      /* Muted Saffron */
+      --accent-saffron-soft: rgba(217, 119, 6, 0.08);
+      --accent-saffron-glow: rgba(217, 119, 6, 0.16);
+      
+      /* Text colors */
+      --text-main: #3B281C;           /* Deep Warm Brown */
+      --text-supporting: #796858;     /* Muted Brown */
+      --text-light: #9C8875;          /* Subdued Warm Sand */
+      
+      /* Borders & Dividers */
+      --border-beige: #E5D5B8;        /* Soft Beige-Gold */
+      --border-gold-subtle: rgba(184, 134, 11, 0.22);
+      --border-gold-focus: rgba(184, 134, 11, 0.5);
+
+      /* Typography */
+      --font-display: 'Cinzel Decorative', Georgia, serif;
+      --font-heading: 'Cinzel', Georgia, serif;
+      --font-devanagari: 'Noto Serif Devanagari', serif;
+      --font-body: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+      /* Shadows & Transitions */
+      --shadow-sm: 0 2px 8px rgba(59, 40, 28, 0.04);
+      --shadow-md: 0 8px 24px rgba(59, 40, 28, 0.06);
+      --shadow-lg: 0 16px 40px rgba(59, 40, 28, 0.09);
+      --shadow-card: 0 4px 20px rgba(184, 134, 11, 0.08);
+      --shadow-card-hover: 0 12px 32px rgba(184, 134, 11, 0.14);
+
+      --radius-sm: 8px;
+      --radius-md: 12px;
+      --radius-lg: 18px;
+      --radius-pill: 100px;
+
+      --transition-fast: 0.2s ease;
+      --transition-normal: 0.35s cubic-bezier(0.2, 0.8, 0.2, 1);
+    }
+
+    /* Global Reset */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      background: var(--bg-primary);
+    }
+
+    body {
+      font-family: var(--font-body);
+      background-color: var(--bg-primary);
+      color: var(--text-main);
+      line-height: 1.75;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    a {
+      color: var(--accent-gold);
+      text-decoration: none;
+      transition: color var(--transition-fast);
+    }
+    a:hover {
+      color: var(--accent-saffron);
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    .text-center {
+      text-align: center;
+    }
+
+    /* =========================================================================
+       SITE HEADER — LIGHT THEME
+       ========================================================================= */
+    .site-header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      background: rgba(255, 249, 240, 0.94);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border-beige);
+      padding: 0.85rem 1.5rem;
+      transition: all var(--transition-normal);
+    }
+
+    .site-header.scrolled {
+      background: rgba(255, 249, 240, 0.98);
+      box-shadow: 0 4px 20px rgba(59, 40, 28, 0.08);
+      border-bottom-color: var(--border-gold-subtle);
+    }
+
+    .header-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .brand-link {
+      display: flex;
+      align-items: center;
+      gap: 0.85rem;
+      text-decoration: none;
+    }
+
+    .brand-seal {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      border: 2px solid var(--accent-gold);
+      object-fit: cover;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .brand-text {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .brand-title-hindi {
+      font-family: var(--font-devanagari);
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--text-main);
+      line-height: 1.15;
+    }
+
+    .brand-title-eng {
+      font-family: var(--font-heading);
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      color: var(--accent-gold);
+      text-transform: uppercase;
+    }
+
+    .desktop-nav {
+      display: flex;
+      align-items: center;
+      gap: 1.75rem;
+    }
+
+    .nav-link {
+      font-family: var(--font-heading);
+      font-size: 0.76rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--text-supporting);
+      position: relative;
+      padding: 0.4rem 0;
+      transition: color var(--transition-fast);
+    }
+
+    .nav-link:hover,
+    .nav-link.active {
+      color: var(--accent-gold);
+    }
+
+    .nav-link.active::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background: var(--accent-gold);
+      border-radius: 2px;
+    }
+
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .header-phone-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      font-family: var(--font-heading);
+      font-size: 0.76rem;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      color: var(--accent-gold);
+      background: var(--accent-saffron-soft);
+      border: 1px solid var(--border-gold-subtle);
+      padding: 0.5rem 1rem;
+      border-radius: var(--radius-pill);
+      transition: all var(--transition-fast);
+    }
+
+    .header-phone-btn:hover {
+      background: var(--accent-saffron);
+      color: #FFF;
+      border-color: var(--accent-saffron);
+      transform: translateY(-1px);
+    }
+
+    .mobile-menu-btn {
+      display: none;
+      background: none;
+      border: 1px solid var(--border-beige);
+      color: var(--text-main);
+      padding: 0.45rem 0.65rem;
+      border-radius: var(--radius-sm);
+      cursor: pointer;
+      font-size: 1.3rem;
+    }
+
+    /* Mobile Drawer */
+    .mobile-drawer {
+      position: fixed;
+      inset: 0;
+      background: rgba(255, 249, 240, 0.98);
+      backdrop-filter: blur(20px);
+      z-index: 2000;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 1.5rem;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity var(--transition-normal);
+    }
+
+    .mobile-drawer.active {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    .mobile-drawer-close {
+      position: absolute;
+      top: 1.5rem;
+      right: 1.5rem;
+      background: none;
+      border: 1px solid var(--border-beige);
+      color: var(--text-main);
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      font-size: 1.4rem;
+      cursor: pointer;
+    }
+
+    .mobile-nav-link {
+      font-family: var(--font-heading);
+      font-size: 1.1rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      color: var(--text-main);
+      text-decoration: none;
+      transition: color var(--transition-fast);
+    }
+
+    .mobile-nav-link.active,
+    .mobile-nav-link:hover {
+      color: var(--accent-gold);
+    }
+
+    /* =========================================================================
+       HERO SECTION — LIGHT, WARM, SACRED
+       ========================================================================= */
+    .hero-vibhag {
+      position: relative;
+      background: linear-gradient(180deg, #FFFDF8 0%, var(--bg-primary) 60%, var(--bg-alt) 100%);
+      padding: 8rem 1.5rem 5rem;
+      overflow: hidden;
+      border-bottom: 1px solid var(--border-beige);
+    }
+
+    .hero-vibhag::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(circle at 15% 30%, rgba(217, 119, 6, 0.06), transparent 45%),
+        radial-gradient(circle at 85% 65%, rgba(184, 134, 11, 0.05), transparent 45%);
+      pointer-events: none;
+    }
+
+    .hero-inner {
+      position: relative;
+      max-width: 860px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .badge-vibhag {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-family: var(--font-heading);
+      font-size: 0.74rem;
+      font-weight: 600;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--accent-saffron);
+      background: var(--accent-saffron-soft);
+      border: 1px solid rgba(217, 119, 6, 0.25);
+      padding: 0.45rem 1.25rem;
+      border-radius: var(--radius-pill);
+      margin-bottom: 1.5rem;
+    }
+
+    .title-hindi-main {
+      font-family: var(--font-devanagari);
+      font-size: clamp(2.4rem, 6vw, 4rem);
+      font-weight: 700;
+      color: var(--text-main);
+      line-height: 1.15;
+      margin-bottom: 0.5rem;
+      letter-spacing: -0.01em;
+    }
+
+    .title-eng-sub {
+      font-family: var(--font-display);
+      font-size: clamp(1.1rem, 2.8vw, 1.7rem);
+      font-weight: 700;
+      color: var(--accent-gold);
+      letter-spacing: 0.16em;
+      margin-bottom: 1.5rem;
+    }
+
+    .hero-tagline {
+      font-family: var(--font-heading);
+      font-size: clamp(1.05rem, 2.2vw, 1.35rem);
+      font-weight: 600;
+      color: var(--accent-saffron);
+      font-style: italic;
+      margin-bottom: 1.5rem;
+      line-height: 1.5;
+    }
+
+    .hero-description {
+      font-size: 1.05rem;
+      color: var(--text-supporting);
+      line-height: 1.85;
+      max-width: 720px;
+      margin: 0 auto 2.5rem;
+    }
+
+    .hero-description strong {
+      color: var(--text-main);
+      font-weight: 600;
+    }
+
+    .hero-actions {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    /* Buttons */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-family: var(--font-heading);
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 0.85rem 1.85rem;
+      border-radius: var(--radius-sm);
+      cursor: pointer;
+      transition: all var(--transition-normal);
+      border: 1px solid transparent;
+      text-decoration: none;
+    }
+
+    .btn-gold-primary {
+      background: linear-gradient(135deg, var(--accent-gold), var(--accent-saffron));
+      color: #FFFFFF;
+      box-shadow: 0 4px 16px rgba(184, 134, 11, 0.25);
+    }
+    .btn-gold-primary:hover {
+      background: linear-gradient(135deg, var(--accent-saffron), var(--accent-gold));
+      color: #FFFFFF;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(184, 134, 11, 0.35);
+    }
+
+    .btn-gold-outline {
+      background: #FFFFFF;
+      color: var(--accent-gold);
+      border-color: var(--accent-gold);
+    }
+    .btn-gold-outline:hover {
+      background: var(--accent-saffron-soft);
+      color: var(--accent-saffron);
+      border-color: var(--accent-saffron);
+      transform: translateY(-2px);
+    }
+
+    /* Decorative section separator */
+    .ornament-divider {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      margin: 3.5rem auto 0;
+      max-width: 280px;
+    }
+
+    .ornament-divider::before,
+    .ornament-divider::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: linear-gradient(to right, transparent, var(--border-beige), transparent);
+    }
+
+    .ornament-divider span {
+      font-size: 1.1rem;
+      color: var(--accent-gold);
+    }
+
+    /* =========================================================================
+       SECTION 2: OUR APPROACH TO MATCHMAKING (Three-Card Layout)
+       ========================================================================= */
+    .section-approach {
+      padding: 6rem 1.5rem;
+      background-color: var(--bg-primary);
+    }
+
+    .section-header {
+      text-align: center;
+      max-width: 760px;
+      margin: 0 auto 3.5rem;
+    }
+
+    .section-pill {
+      display: inline-block;
+      font-family: var(--font-heading);
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--accent-saffron);
+      margin-bottom: 0.6rem;
+    }
+
+    .section-title {
+      font-family: var(--font-heading);
+      font-size: clamp(1.6rem, 3.5vw, 2.35rem);
+      font-weight: 700;
+      color: var(--text-main);
+      line-height: 1.25;
+      margin-bottom: 1rem;
+    }
+
+    .section-title .gold-text {
+      color: var(--accent-gold);
+    }
+
+    .section-subtitle {
+      font-size: 1rem;
+      color: var(--text-supporting);
+      line-height: 1.8;
+    }
+
+    /* Three-Card Grid */
+    .approach-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+    }
+
+    .approach-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-beige);
+      border-radius: var(--radius-md);
+      padding: 2.25rem 2rem;
+      box-shadow: var(--shadow-card);
+      transition: all var(--transition-normal);
+      display: flex;
+      flex-direction: column;
+      position: relative;
+    }
+
+    .approach-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 1.5rem;
+      right: 1.5rem;
+      height: 3px;
+      background: linear-gradient(90deg, transparent, var(--accent-gold), transparent);
+      opacity: 0;
+      transition: opacity var(--transition-fast);
+    }
+
+    .approach-card:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow-card-hover);
+      border-color: var(--border-gold-focus);
+    }
+
+    .approach-card:hover::before {
+      opacity: 1;
+    }
+
+    .approach-card-header {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .approach-icon-wrap {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: var(--accent-saffron-soft);
+      border: 1px solid rgba(217, 119, 6, 0.2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .approach-icon-wrap img {
+      width: 24px;
+      height: 24px;
+      object-fit: contain;
+    }
+
+    .approach-card-tag {
+      font-family: var(--font-heading);
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--accent-gold);
+    }
+
+    .approach-card-title {
+      font-family: var(--font-heading);
+      font-size: 1.12rem;
+      font-weight: 700;
+      color: var(--text-main);
+      line-height: 1.35;
+      margin-bottom: 1rem;
+    }
+
+    .approach-card-text {
+      font-size: 0.92rem;
+      color: var(--text-supporting);
+      line-height: 1.8;
+      flex-grow: 1;
+    }
+
+    /* =========================================================================
+       SECTION 3: ABOUT RISHTE-NAATE VIBHAG (Traditions & New Beginnings)
+       ========================================================================= */
+    .section-about {
+      padding: 6rem 1.5rem;
+      background-color: var(--bg-alt);
+      border-top: 1px solid var(--border-beige);
+      border-bottom: 1px solid var(--border-beige);
+    }
+
+    .about-layout {
+      display: grid;
+      grid-template-columns: 1fr 1.05fr;
+      gap: 3.5rem;
+      align-items: center;
+    }
+
+    .about-image-frame {
+      position: relative;
+      border-radius: var(--radius-lg);
+      padding: 0.75rem;
+      background: #FFFFFF;
+      border: 1px solid var(--border-beige);
+      box-shadow: var(--shadow-md);
+    }
+
+    .about-image-frame img {
+      width: 100%;
+      border-radius: calc(var(--radius-lg) - 6px);
+      aspect-ratio: 4/3;
+      object-fit: cover;
+    }
+
+    .about-image-caption {
+      margin-top: 0.75rem;
+      text-align: center;
+      font-family: var(--font-heading);
+      font-size: 0.76rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      color: var(--text-light);
+    }
+
+    .about-content h3 {
+      font-family: var(--font-heading);
+      font-size: clamp(1.4rem, 2.5vw, 1.85rem);
+      font-weight: 700;
+      color: var(--text-main);
+      line-height: 1.3;
+      margin-bottom: 1.25rem;
+    }
+
+    .about-content p {
+      font-size: 0.95rem;
+      color: var(--text-supporting);
+      line-height: 1.85;
+      margin-bottom: 1.15rem;
+    }
+
+    .about-quote-box {
+      margin-top: 1.5rem;
+      padding: 1.25rem 1.5rem;
+      background: #FFFFFF;
+      border-left: 4px solid var(--accent-gold);
+      border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .about-quote-box p {
+      font-family: var(--font-heading);
+      font-size: 0.94rem;
+      font-style: italic;
+      color: var(--text-main);
+      margin-bottom: 0;
+      line-height: 1.7;
+    }
+
+    /* =========================================================================
+       SECTION 4: OUR SERVICES (6 Core Matchmaking Areas)
+       ========================================================================= */
+    .section-services {
+      padding: 6rem 1.5rem;
+      background-color: var(--bg-primary);
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.75rem;
+      margin-top: 3rem;
+    }
+
+    .service-item-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-beige);
+      border-radius: var(--radius-md);
+      padding: 2rem 1.75rem;
+      box-shadow: var(--shadow-sm);
+      transition: all var(--transition-normal);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .service-item-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-card);
+      border-color: var(--border-gold-focus);
+    }
+
+    .service-number {
+      font-family: var(--font-display);
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: var(--accent-gold);
+      margin-bottom: 0.75rem;
+      line-height: 1;
+    }
+
+    .service-title {
+      font-family: var(--font-heading);
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--text-main);
+      margin-bottom: 0.75rem;
+      line-height: 1.35;
+    }
+
+    .service-description {
+      font-size: 0.9rem;
+      color: var(--text-supporting);
+      line-height: 1.75;
+    }
+
+    /* =========================================================================
+       SECTION 5: DEPARTMENT GALLERY (Authentic Local Photos)
+       ========================================================================= */
+    .section-gallery {
+      padding: 6rem 1.5rem;
+      background-color: var(--bg-alt);
+      border-top: 1px solid var(--border-beige);
+      border-bottom: 1px solid var(--border-beige);
+    }
+
+    .gallery-editorial-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.25rem;
+      margin-top: 3rem;
+    }
+
+    .gallery-photo-card {
+      position: relative;
+      background: #FFFFFF;
+      padding: 0.5rem;
+      border: 1px solid var(--border-beige);
+      border-radius: var(--radius-md);
+      box-shadow: var(--shadow-sm);
+      cursor: pointer;
+      overflow: hidden;
+      transition: all var(--transition-normal);
+    }
+
+    .gallery-photo-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-card-hover);
+      border-color: var(--accent-gold);
+    }
+
+    .gallery-photo-card.span-2 {
+      grid-column: span 2;
+    }
+
+    .gallery-photo-wrap {
+      position: relative;
+      overflow: hidden;
+      border-radius: calc(var(--radius-md) - 4px);
+      aspect-ratio: 4/3;
+    }
+
+    .gallery-photo-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+
+    .gallery-photo-card:hover .gallery-photo-wrap img {
+      transform: scale(1.05);
+    }
+
+    .gallery-photo-badge {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: linear-gradient(to top, rgba(59, 40, 28, 0.9) 0%, transparent 100%);
+      padding: 1.25rem 0.85rem 0.65rem;
+      color: #FFFFFF;
+      font-family: var(--font-heading);
+      font-size: 0.74rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      opacity: 0;
+      transition: opacity var(--transition-fast);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .gallery-photo-card:hover .gallery-photo-badge {
+      opacity: 1;
+    }
+
+    .gallery-card-label {
+      padding: 0.65rem 0.4rem 0.25rem;
+      font-family: var(--font-heading);
+      font-size: 0.78rem;
+      font-weight: 600;
+      color: var(--text-main);
+      text-align: center;
+      letter-spacing: 0.04em;
+    }
+
+    /* =========================================================================
+       SECTION 6: BEAUTIFUL NEW CHAPTERS (Wedding Celebrations Gallery)
+       ========================================================================= */
+    .section-weddings {
+      padding: 6rem 1.5rem;
+      background-color: var(--bg-primary);
+    }
+
+    .wedding-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+
+    .wedding-editorial-card {
+      background: #FFFFFF;
+      border: 1px solid var(--border-beige);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      box-shadow: var(--shadow-card);
+      cursor: pointer;
+      transition: all var(--transition-normal);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .wedding-editorial-card:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow-card-hover);
+      border-color: var(--accent-gold);
+    }
+
+    .wedding-img-wrap {
+      position: relative;
+      aspect-ratio: 4/5;
+      overflow: hidden;
+    }
+
+    .wedding-img-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.6s ease;
+    }
+
+    .wedding-editorial-card:hover .wedding-img-wrap img {
+      transform: scale(1.04);
+    }
+
+    .wedding-card-body {
+      padding: 1.5rem;
+      text-align: center;
+    }
+
+    .wedding-card-title {
+      font-family: var(--font-heading);
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--text-main);
+      letter-spacing: 0.06em;
+      margin-bottom: 0.35rem;
+    }
+
+    .wedding-card-desc {
+      font-size: 0.82rem;
+      color: var(--text-supporting);
+      line-height: 1.6;
+    }
+
+    /* =========================================================================
+       SECTION 7: MANDIR MANAGEMENT (Office Bearers)
+       ========================================================================= */
+    .section-management {
+      padding: 6rem 1.5rem;
+      background-color: var(--bg-alt);
+      border-top: 1px solid var(--border-beige);
+      border-bottom: 1px solid var(--border-beige);
+    }
+
+    .leadership-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.75rem;
+      margin-top: 3rem;
+    }
+
+    .leader-portrait-card {
+      background: #FFFFFF;
+      border: 1px solid var(--border-beige);
+      border-radius: var(--radius-md);
+      padding: 2.25rem 1.25rem 1.75rem;
+      text-align: center;
+      box-shadow: var(--shadow-sm);
+      transition: all var(--transition-normal);
+    }
+
+    .leader-portrait-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-card);
+      border-color: var(--accent-gold);
+    }
+
+    .leader-avatar-frame {
+      width: 120px;
+      height: 120px;
+      margin: 0 auto 1.25rem;
+      border-radius: 50%;
+      padding: 4px;
+      background: linear-gradient(135deg, var(--accent-gold), var(--border-beige));
+      box-shadow: var(--shadow-sm);
+    }
+
+    .leader-avatar-frame img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      object-fit: cover;
+      background: #FFF;
+    }
+
+    .leader-name {
+      font-family: var(--font-heading);
+      font-size: 0.96rem;
+      font-weight: 700;
+      color: var(--text-main);
+      letter-spacing: 0.04em;
+      margin-bottom: 0.35rem;
+    }
+
+    .leader-designation {
+      font-family: var(--font-heading);
+      font-size: 0.74rem;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--accent-saffron);
+    }
+
+    /* Department Management Overview & Photo */
+    .dept-mgmt-wrap {
+      max-width: 820px;
+      margin: 4.5rem auto 0;
+      background: #FFFFFF;
+      border: 1px solid var(--border-beige);
+      border-radius: var(--radius-lg);
+      padding: 2rem;
+      box-shadow: var(--shadow-card);
+      text-align: center;
+    }
+
+    .dept-mgmt-photo {
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      margin-bottom: 1.5rem;
+      border: 1px solid var(--border-beige);
+    }
+
+    .dept-mgmt-photo img {
+      width: 100%;
+      aspect-ratio: 16/10;
+      object-fit: cover;
+    }
+
+    .dept-mgmt-title {
+      font-family: var(--font-heading);
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--text-main);
+      margin-bottom: 0.75rem;
+    }
+
+    .dept-mgmt-text {
+      font-size: 0.92rem;
+      color: var(--text-supporting);
+      line-height: 1.8;
+      margin-bottom: 1rem;
+    }
+
+    .dept-mgmt-note {
+      font-size: 0.8rem;
+      color: var(--text-light);
+      font-style: italic;
+      padding-top: 1rem;
+      border-top: 1px solid var(--border-beige);
+    }
+
+    /* =========================================================================
+       SECTION 8: REGISTRATION GUIDELINES & CHARGES (Verified From Site)
+       ========================================================================= */
+    .section-registration {
+      padding: 6rem 1.5rem;
+      background-color: var(--bg-primary);
+    }
+
+    .guidelines-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+
+    .guideline-card {
+      background: #FFFFFF;
+      border: 1px solid var(--border-beige);
+      border-radius: var(--radius-md);
+      padding: 2.5rem 2rem;
+      box-shadow: var(--shadow-card);
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: all var(--transition-normal);
+    }
+
+    .guideline-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-card-hover);
+      border-color: var(--accent-gold);
+    }
+
+    .guideline-icon {
+      font-size: 2.2rem;
+      margin-bottom: 1rem;
+    }
+
+    .guideline-title {
+      font-family: var(--font-heading);
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--text-main);
+      margin-bottom: 0.85rem;
+    }
+
+    .guideline-desc {
+      font-size: 0.9rem;
+      color: var(--text-supporting);
+      line-height: 1.75;
+      margin-bottom: 1.25rem;
+      flex-grow: 1;
+    }
+
+    .service-fee-pill {
+      display: inline-block;
+      font-family: var(--font-heading);
+      font-size: 0.82rem;
+      font-weight: 700;
+      color: var(--accent-saffron);
+      background: var(--accent-saffron-soft);
+      border: 1px solid rgba(217, 119, 6, 0.3);
+      padding: 0.4rem 1rem;
+      border-radius: var(--radius-pill);
+      letter-spacing: 0.04em;
+    }
+
+    /* =========================================================================
+       SECTION 9: CONTACT & ENQUIRY CTA
+       ========================================================================= */
+    .section-contact-cta {
+      padding: 5.5rem 1.5rem;
+      background: linear-gradient(180deg, var(--bg-alt) 0%, #EFE2CF 100%);
+      border-top: 1px solid var(--border-beige);
+      text-align: center;
+    }
+
+    .contact-box {
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    .contact-box-title {
+      font-family: var(--font-heading);
+      font-size: clamp(1.4rem, 3vw, 2.1rem);
+      font-weight: 700;
+      color: var(--text-main);
+      margin-bottom: 1rem;
+    }
+
+    .contact-box-text {
+      font-size: 0.98rem;
+      color: var(--text-supporting);
+      line-height: 1.8;
+      margin-bottom: 1.75rem;
+    }
+
+    .contact-info-strip {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+      margin-bottom: 2rem;
+      font-size: 0.88rem;
+      color: var(--text-main);
+    }
+
+    .contact-info-item {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .contact-btn-group {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    /* =========================================================================
+       FOOTER — LIGHT WARM ELEGANT
+       ========================================================================= */
+    .site-footer-light {
+      background-color: #2D1E15;
+      color: #E5D5B8;
+      padding: 3.5rem 1.5rem 2.5rem;
+      border-top: 1px solid var(--border-beige);
+    }
+
+    .footer-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .footer-logo-title {
+      font-family: var(--font-devanagari);
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: #FFFFFF;
+      margin-bottom: 0.25rem;
+    }
+
+    .footer-logo-sub {
+      font-family: var(--font-heading);
+      font-size: 0.76rem;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      color: var(--accent-gold);
+      margin-bottom: 1.5rem;
+      text-transform: uppercase;
+    }
+
+    .footer-nav-links {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1.75rem;
+      flex-wrap: wrap;
+      margin-bottom: 2rem;
+    }
+
+    .footer-nav-links a {
+      font-family: var(--font-heading);
+      font-size: 0.74rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #D4C5A0;
+      transition: color var(--transition-fast);
+    }
+
+    .footer-nav-links a:hover {
+      color: var(--accent-gold);
+    }
+
+    .footer-copy {
+      font-size: 0.78rem;
+      color: #9C8875;
+      line-height: 1.7;
+    }
+
+    /* =========================================================================
+       LIGHTBOX MODAL
+       ========================================================================= */
+    .lightbox-modal {
+      position: fixed;
+      inset: 0;
+      background: rgba(45, 30, 21, 0.94);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      z-index: 5000;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 1.5rem;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity var(--transition-fast);
+    }
+
+    .lightbox-modal.active {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    .lightbox-modal img {
+      max-width: 90vw;
+      max-height: 80vh;
+      border-radius: var(--radius-md);
+      border: 3px solid var(--accent-gold);
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6);
+      object-fit: contain;
+    }
+
+    .lightbox-caption {
+      margin-top: 1.25rem;
+      font-family: var(--font-heading);
+      font-size: 0.9rem;
+      letter-spacing: 0.06em;
+      color: #FFF9F0;
+      text-align: center;
+      max-width: 600px;
+    }
+
+    .lightbox-close-btn {
+      position: absolute;
+      top: 1.5rem;
+      right: 1.5rem;
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.12);
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      color: #FFFFFF;
+      font-size: 1.5rem;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background var(--transition-fast);
+    }
+
+    .lightbox-close-btn:hover {
+      background: var(--accent-saffron);
+    }
+
+    /* =========================================================================
+       RESPONSIVE BREAKPOINTS
+       ========================================================================= */
+    @media (max-width: 1024px) {
+      .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .gallery-editorial-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .leadership-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .guidelines-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .desktop-nav {
+        display: none;
+      }
+      .mobile-menu-btn {
+        display: block;
+      }
+      .header-phone-btn {
+        display: none;
+      }
+      .about-layout {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+      .approach-grid {
+        grid-template-columns: 1fr;
+      }
+      .gallery-editorial-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .gallery-photo-card.span-2 {
+        grid-column: span 2;
+      }
+      .wedding-grid {
+        grid-template-columns: 1fr;
+        max-width: 420px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .services-grid {
+        grid-template-columns: 1fr;
+      }
+      .leadership-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.25rem;
+      }
+      .guidelines-grid {
+        grid-template-columns: 1fr;
+      }
+      .hero-vibhag {
+        padding: 6.5rem 1.5rem 3.5rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .gallery-editorial-grid {
+        grid-template-columns: 1fr;
+      }
+      .gallery-photo-card.span-2 {
+        grid-column: span 1;
+      }
+      .leadership-grid {
+        grid-template-columns: 1fr;
+        max-width: 280px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .leader-avatar-frame {
+        width: 100px;
+        height: 100px;
+      }
+      .contact-info-strip {
+        flex-direction: column;
+        gap: 0.75rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- =======================================================================
+       HEADER — LIGHT ELEGANT SCHEME
+       ======================================================================= -->
+  <header class="site-header" id="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="brand-link">
+        <img src="assets/images/mandir-logo.jpeg" alt="Geeta Bhawan Mandir Seal" class="brand-seal" width="44" height="44">
+        <div class="brand-text">
+          <span class="brand-title-hindi">गीता भवन</span>
+          <span class="brand-title-eng">GEETA BHAWAN MANDIR</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="desktop-nav" aria-label="Main Navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="mandir-darshan.html" class="nav-link">Mandir Darshan</a>
+        <a href="rishte-naate.html" class="nav-link active">Rishte-Naate Vibhag</a>
+        <a href="index.html#timings" class="nav-link">Timings & Pooja</a>
+        <a href="index.html#visit" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Header CTAs -->
+      <div class="header-actions">
+        <a href="tel:01147000208" class="header-phone-btn" title="Call Mandir Karyalay">
+          <span>📞 011-47000208</span>
+        </a>
+        <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Open Mobile Navigation">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-drawer" id="mobile-drawer">
+    <button class="mobile-drawer-close" id="mobile-drawer-close" aria-label="Close Mobile Navigation">✕</button>
+    <a href="index.html" class="mobile-nav-link" onclick="closeDrawer()">Home (मुख्य पृष्ठ)</a>
+    <a href="mandir-darshan.html" class="mobile-nav-link" onclick="closeDrawer()">Mandir Darshan (पावन दर्शन)</a>
+    <a href="rishte-naate.html" class="mobile-nav-link active" onclick="closeDrawer()">Rishte-Naate Vibhag (रिश्ते-नाते विभाग)</a>
+    <a href="index.html#timings" class="mobile-nav-link" onclick="closeDrawer()">Aarti & Timings (आरती समय)</a>
+    <a href="index.html#visit" class="mobile-nav-link" onclick="closeDrawer()">Contact Us (संपर्क)</a>
+    <a href="tel:01147000208" class="btn btn-gold-primary" style="margin-top: 1rem;">📞 011-47000208</a>
+  </div>
+
+  <!-- =======================================================================
+       SECTION 1: HERO — RISHTE-NAATE VIBHAG
+       ======================================================================= -->
+  <section class="hero-vibhag" id="hero">
+    <div class="container hero-inner">
+      <div class="badge-vibhag">🙏 श्री गीता भवन मंदिर • KIRTI NAGAR, NEW DELHI</div>
+      <h1 class="title-hindi-main">रिश्ते-नाते विभाग</h1>
+      <div class="title-eng-sub">RISHTE-NAATE VIBHAG</div>
+      <p class="hero-tagline">"Bringing Hearts Together. Building Bonds for a Lifetime."</p>
+      <p class="hero-description">
+        Marriage is the beginning of a lifelong journey built on trust, understanding, and shared values. The <strong>Rishte-Naate Vibhag of Geeta Bhawan</strong> is dedicated to helping individuals and families find suitable life partners through a personal, thoughtful, and family-oriented matchmaking process. Rooted in the enduring traditions of Indian culture, the department seeks to bring compatible individuals together while respecting their aspirations, preferences, and family values.
+      </p>
+      <div class="hero-actions">
+        <a href="#approach" class="btn btn-gold-primary">Our Approach</a>
+        <a href="#services" class="btn btn-gold-outline">Our Services</a>
+        <a href="#registration" class="btn btn-gold-outline">Registration & Guidelines</a>
+      </div>
+      <div class="ornament-divider"><span>💍</span></div>
+    </div>
+  </section>
+
+  <!-- =======================================================================
+       SECTION 2: OUR APPROACH TO MATCHMAKING (Three-Card Layout)
+       ======================================================================= -->
+  <section class="section-approach" id="approach">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-pill">हमारी पद्धति • OUR METHODOLOGY</span>
+        <h2 class="section-title">
+          A Thoughtful Approach to <span class="gold-text">Finding Your Life Partner</span>
+        </h2>
+        <p class="section-subtitle">
+          Every meaningful relationship begins with understanding. Our approach to matchmaking centres on individual preferences, family values, and the belief that a lasting partnership deserves careful consideration.
+        </p>
+      </div>
+
+      <div class="approach-grid">
+        <!-- Card 1 -->
+        <article class="approach-card">
+          <div class="approach-card-header">
+            <div class="approach-icon-wrap">
+              <img src="assets/images/rishte-naate/service1.png" alt="Tradition Icon" width="24" height="24">
+            </div>
+            <span class="approach-card-tag">Card 01</span>
+          </div>
+          <h3 class="approach-card-title">Experience Rooted in Tradition</h3>
+          <p class="approach-card-text">
+            With decades of experience in matchmaking, Rishte-Naate Vibhag brings a traditional, family-oriented perspective to the search for a suitable life partner. Our approach emphasises understanding individual requirements, respecting family values, and facilitating meaningful connections.
+          </p>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="approach-card">
+          <div class="approach-card-header">
+            <div class="approach-icon-wrap">
+              <img src="assets/images/rishte-naate/service2.png" alt="Connection Icon" width="24" height="24">
+            </div>
+            <span class="approach-card-tag">Card 02</span>
+          </div>
+          <h3 class="approach-card-title">Meaningful Connections</h3>
+          <p class="approach-card-text">
+            Finding the right life partner involves more than shared interests; it requires an understanding of aspirations, expectations, and values. We encourage personal interaction between individuals and families to help them explore suitable matches with greater clarity and confidence.
+          </p>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="approach-card">
+          <div class="approach-card-header">
+            <div class="approach-icon-wrap">
+              <img src="assets/images/rishte-naate/service3.png" alt="Guidance Icon" width="24" height="24">
+            </div>
+            <span class="approach-card-tag">Card 03</span>
+          </div>
+          <h3 class="approach-card-title">Personal Guidance and Support</h3>
+          <p class="approach-card-text">
+            The journey towards marriage is deeply personal, and every individual deserves to be treated with understanding and respect. Our approach focuses on providing thoughtful assistance, acknowledging family expectations, and helping individuals navigate the matchmaking process with dignity and discretion.
+          </p>
+        </article>
+      </div>
+
+      <div class="ornament-divider"><span>🌸</span></div>
+    </div>
+  </section>
+
+  <!-- =======================================================================
+       SECTION 3: ABOUT RISHTE-NAATE VIBHAG
+       ======================================================================= -->
+  <section class="section-about" id="about">
+    <div class="container">
+      <div class="about-layout">
+        <div class="about-image-frame">
+          <img src="assets/images/rishte-naate/service1.jpg" alt="Rishte-Naate Vibhag Entrance at Geeta Bhawan Mandir" width="800" height="600">
+          <p class="about-image-caption">Entrance to Rishte-Naate Vibhag — Geeta Bhawan Mandir, Kirti Nagar</p>
+        </div>
+
+        <div class="about-content">
+          <span class="section-pill">परिचय • ABOUT THE DEPARTMENT</span>
+          <h3>Where Traditions Meet New Beginnings</h3>
+          <p>
+            Rishte-Naate Vibhag is an integral part of Geeta Bhawan’s commitment to fostering meaningful relationships and supporting families in their search for suitable life partners.
+          </p>
+          <p>
+            Guided by traditional Indian values and a family-centred philosophy, the department brings together individuals seeking companionship and marriage. It recognises that every prospective match represents more than two individuals coming together; it also marks the beginning of a relationship between families, traditions, and shared aspirations.
+          </p>
+          <p>
+            Our approach places importance on personal interaction, family participation, and a thoughtful understanding of each individual’s expectations. By combining traditional matchmaking principles with an organised and considerate approach, Rishte-Naate Vibhag strives to make the search for a life partner a more personal, respectful, and meaningful experience.
+          </p>
+          <div class="about-quote-box">
+            <p>"Our belief is simple: a lasting relationship begins with understanding, grows through trust, and flourishes through mutual respect."</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =======================================================================
+       SECTION 4: OUR SERVICES (6 Core Areas)
+       ======================================================================= -->
+  <section class="section-services" id="services">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-pill">सेवाएं • OUR SERVICES</span>
+        <h2 class="section-title">
+          Personalised Matchmaking, <span class="gold-text">Guided by Family Values</span>
+        </h2>
+        <p class="section-subtitle">
+          Every individual has a unique vision of marriage and companionship. Rishte-Naate Vibhag aims to support this journey through a considered approach that respects personal preferences, cultural traditions, and family expectations.
+        </p>
+      </div>
+
+      <div class="services-grid">
+        <!-- 01 -->
+        <div class="service-item-card">
+          <span class="service-number">01</span>
+          <h3 class="service-title">Personalised Matchmaking</h3>
+          <p class="service-description">
+            Understanding individual preferences, expectations, and compatibility considerations to help prospective partners explore suitable matches.
+          </p>
+        </div>
+
+        <!-- 02 -->
+        <div class="service-item-card">
+          <span class="service-number">02</span>
+          <h3 class="service-title">Family Consultation</h3>
+          <p class="service-description">
+            Encouraging constructive participation from families and acknowledging their perspectives throughout the matchmaking journey.
+          </p>
+        </div>
+
+        <!-- 03 -->
+        <div class="service-item-card">
+          <span class="service-number">03</span>
+          <h3 class="service-title">Suitable Match Recommendations</h3>
+          <p class="service-description">
+            Facilitating the exploration of potential matches in accordance with the preferences and requirements shared by individuals and their families.
+          </p>
+        </div>
+
+        <!-- 04 -->
+        <div class="service-item-card">
+          <span class="service-number">04</span>
+          <h3 class="service-title">Confidential & Respectful Assistance</h3>
+          <p class="service-description">
+            Approaching personal information and matchmaking discussions with discretion, sensitivity, and respect for individual privacy.
+          </p>
+        </div>
+
+        <!-- 05 -->
+        <div class="service-item-card">
+          <span class="service-number">05</span>
+          <h3 class="service-title">Tradition & Cultural Values</h3>
+          <p class="service-description">
+            Recognising the importance of cultural traditions, family customs, and shared values in the pursuit of a compatible life partner.
+          </p>
+        </div>
+
+        <!-- 06 -->
+        <div class="service-item-card">
+          <span class="service-number">06</span>
+          <h3 class="service-title">Personal Interaction</h3>
+          <p class="service-description">
+            Encouraging meaningful communication between prospective partners and their families to help establish mutual understanding and clarity.
+          </p>
+        </div>
+      </div>
+
+      <div class="ornament-divider"><span>🪔</span></div>
+    </div>
+  </section>
+
+  <!-- =======================================================================
+       SECTION 5: DEPARTMENT GALLERY (Authentic Local Photographs)
+       ======================================================================= -->
+  <section class="section-gallery" id="gallery">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-pill">परिसर दर्शन • DEPARTMENT GALLERY</span>
+        <h2 class="section-title">
+          Inside the <span class="gold-text">Rishte-Naate Vibhag</span>
+        </h2>
+        <p class="section-subtitle">
+          Authentic photographs of the department facilities at Geeta Bhawan Mandir — consultation rooms, file-viewing hall, and registration counters. Click any photograph to view in full resolution.
+        </p>
+      </div>
+
+      <div class="gallery-editorial-grid">
+        <!-- Service 1: Entrance -->
+        <div class="gallery-photo-card span-2" data-full="assets/images/rishte-naate/service1.jpg" data-caption="Rishte-Naate Vibhag Entrance — Dedicated archway at Geeta Bhawan Mandir">
+          <div class="gallery-photo-wrap">
+            <img src="assets/images/rishte-naate/service1.jpg" alt="Vibhag Entrance" loading="lazy" width="600" height="450">
+            <div class="gallery-photo-badge">
+              <span>Vibhag Entrance</span>
+              <span>🔍 Zoom</span>
+            </div>
+          </div>
+          <div class="gallery-card-label">Main Entrance & Reception</div>
+        </div>
+
+        <!-- Service 2: Consultation -->
+        <div class="gallery-photo-card" data-full="assets/images/rishte-naate/service2.jpg" data-caption="Personal family consultation and profile review in the lounge">
+          <div class="gallery-photo-wrap">
+            <img src="assets/images/rishte-naate/service2.jpg" alt="Family Consultation" loading="lazy" width="600" height="450">
+            <div class="gallery-photo-badge">
+              <span>Consultation Room</span>
+              <span>🔍 Zoom</span>
+            </div>
+          </div>
+          <div class="gallery-card-label">Family Consultation</div>
+        </div>
+
+        <!-- Service 3: Guidance Desk -->
+        <div class="gallery-photo-card" data-full="assets/images/rishte-naate/service3.jpg" data-caption="Matchmaking discussion and personal guidance with senior counsel">
+          <div class="gallery-photo-wrap">
+            <img src="assets/images/rishte-naate/service3.jpg" alt="Discussion Area" loading="lazy" width="600" height="450">
+            <div class="gallery-photo-badge">
+              <span>Discussion Desk</span>
+              <span>🔍 Zoom</span>
+            </div>
+          </div>
+          <div class="gallery-card-label">Counsel & Guidance</div>
+        </div>
+
+        <!-- Service 4: Hall -->
+        <div class="gallery-photo-card span-2" data-full="assets/images/rishte-naate/service4.jpg" data-caption="File Viewing Hall — Dedicated reading desks for families reviewing matrimonial files">
+          <div class="gallery-photo-wrap">
+            <img src="assets/images/rishte-naate/service4.jpg" alt="File Viewing Hall" loading="lazy" width="600" height="450">
+            <div class="gallery-photo-badge">
+              <span>File Viewing Hall</span>
+              <span>🔍 Zoom</span>
+            </div>
+          </div>
+          <div class="gallery-card-label">Dedicated File Viewing Hall</div>
+        </div>
+
+        <!-- Service 5: Registration -->
+        <div class="gallery-photo-card" data-full="assets/images/rishte-naate/service5.jpg" data-caption="Registration counter and member enquiry desk">
+          <div class="gallery-photo-wrap">
+            <img src="assets/images/rishte-naate/service5.jpg" alt="Registration Counter" loading="lazy" width="600" height="450">
+            <div class="gallery-photo-badge">
+              <span>Registration</span>
+              <span>🔍 Zoom</span>
+            </div>
+          </div>
+          <div class="gallery-card-label">Enquiry & Registration</div>
+        </div>
+
+        <!-- Service 6: Reading Hall -->
+        <div class="gallery-photo-card" data-full="assets/images/rishte-naate/service6.jpg" data-caption="Devotee families exploring prospective matches in a calm, respectful setting">
+          <div class="gallery-photo-wrap">
+            <img src="assets/images/rishte-naate/service6.jpg" alt="Profile Browsing Hall" loading="lazy" width="600" height="450">
+            <div class="gallery-photo-badge">
+              <span>Reading Hall</span>
+              <span>🔍 Zoom</span>
+            </div>
+          </div>
+          <div class="gallery-card-label">Profile Reading Area</div>
+        </div>
+
+        <!-- Service 7: Admin Office -->
+        <div class="gallery-photo-card" data-full="assets/images/rishte-naate/service7.jpg" data-caption="Department administrative office and record maintenance staff">
+          <div class="gallery-photo-wrap">
+            <img src="assets/images/rishte-naate/service7.jpg" alt="Administrative Office" loading="lazy" width="600" height="450">
+            <div class="gallery-photo-badge">
+              <span>Admin Office</span>
+              <span>🔍 Zoom</span>
+            </div>
+          </div>
+          <div class="gallery-card-label">Records & Admin Office</div>
+        </div>
+
+        <!-- Service 8: Service Window -->
+        <div class="gallery-photo-card" data-full="assets/images/rishte-naate/service8.jpg" data-caption="Service token window and file requisition counter">
+          <div class="gallery-photo-wrap">
+            <img src="assets/images/rishte-naate/service8.jpg" alt="Service Counter" loading="lazy" width="600" height="450">
+            <div class="gallery-photo-badge">
+              <span>Service Counter</span>
+              <span>🔍 Zoom</span>
+            </div>
+          </div>
+          <div class="gallery-card-label">Token & File Requisition</div>
+        </div>
+      </div>
+
+      <div class="ornament-divider"><span>📸</span></div>
+    </div>
+  </section>
+
+  <!-- =======================================================================
+       SECTION 6: BEAUTIFUL NEW CHAPTERS (Weddings Gallery)
+       ======================================================================= -->
+  <section class="section-weddings" id="weddings">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-pill">शुभ विवाह • SACRED UNIONS</span>
+        <h2 class="section-title">
+          Every Union Begins a <span class="gold-text">Beautiful New Chapter</span>
+        </h2>
+        <p class="section-subtitle">
+          Behind every meaningful union lies a story of understanding, companionship, and two families coming together. At Rishte-Naate Vibhag, each successful union represents the possibility of a new beginning, shaped by shared values, mutual respect, and the promise of lifelong companionship.
+        </p>
+      </div>
+
+      <div class="wedding-grid">
+        <article class="wedding-editorial-card" data-full="assets/images/rishte-naate/gallery1.jpg" data-caption="Traditional Indian bride in sacred bridal adornments celebrating cultural heritage">
+          <div class="wedding-img-wrap">
+            <img src="assets/images/rishte-naate/gallery1.jpg" alt="Traditional Indian Bride" loading="lazy" width="400" height="500">
+          </div>
+          <div class="wedding-card-body">
+            <h3 class="wedding-card-title">Sacred Bridal Heritage</h3>
+            <p class="wedding-card-desc">Preserving enduring cultural traditions and the sanctity of marriage.</p>
+          </div>
+        </article>
+
+        <article class="wedding-editorial-card" data-full="assets/images/rishte-naate/gallery2.jpg" data-caption="Sacred Pheras ceremony — Seven eternal vows taken under the flower-adorned mandap">
+          <div class="wedding-img-wrap">
+            <img src="assets/images/rishte-naate/gallery2.jpg" alt="Sacred Pheras Ceremony" loading="lazy" width="400" height="500">
+          </div>
+          <div class="wedding-card-body">
+            <h3 class="wedding-card-title">Sacred Saptapadi</h3>
+            <p class="wedding-card-desc">Eternal vows of companionship, mutual respect, and lifelong devotion.</p>
+          </div>
+        </article>
+
+        <article class="wedding-editorial-card" data-full="assets/images/rishte-naate/gallery3.jpg" data-caption="Joyful bridal entrance surrounded by family blessings and auspicious festivities">
+          <div class="wedding-img-wrap">
+            <img src="assets/images/rishte-naate/gallery3.jpg" alt="Joyful Wedding Celebration" loading="lazy" width="400" height="500">
+          </div>
+          <div class="wedding-card-body">
+            <h3 class="wedding-card-title">Family Blessings</h3>
+            <p class="wedding-card-desc">Celebrating the joy of two families coming together in auspicious harmony.</p>
+          </div>
+        </article>
+      </div>
+
+      <div class="ornament-divider"><span>💐</span></div>
+    </div>
+  </section>
+
+  <!-- =======================================================================
+       SECTION 7: MANDIR MANAGEMENT & LEADERSHIP
+       ======================================================================= -->
+  <section class="section-management" id="management">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-pill">प्रबंधन समिति • MANDIR MANAGEMENT</span>
+        <h2 class="section-title">
+          The Leadership Behind <span class="gold-text">Geeta Bhawan</span>
+        </h2>
+        <p class="section-subtitle">
+          Acknowledging the respected individuals serving in office bearer positions at Geeta Bhawan Mandir, guiding the institution with dedication and vision.
+        </p>
+      </div>
+
+      <!-- Office Bearers Grid -->
+      <div class="leadership-grid">
+        <!-- 1. Chairman -->
+        <div class="leader-portrait-card">
+          <div class="leader-avatar-frame">
+            <img src="assets/images/rishte-naate/mm1.jpeg" alt="Mr. Avinash Sahni" loading="lazy" width="120" height="120">
+          </div>
+          <h3 class="leader-name">Mr. Avinash Sahni</h3>
+          <span class="leader-designation">Chairman</span>
+        </div>
+
+        <!-- 2. President -->
+        <div class="leader-portrait-card">
+          <div class="leader-avatar-frame">
+            <img src="assets/images/rishte-naate/mm2.jpeg" alt="Mr. Tribhuvan Sethi" loading="lazy" width="120" height="120">
+          </div>
+          <h3 class="leader-name">Mr. Tribhuvan Sethi</h3>
+          <span class="leader-designation">President</span>
+        </div>
+
+        <!-- 3. General Secretary -->
+        <div class="leader-portrait-card">
+          <div class="leader-avatar-frame">
+            <img src="assets/images/rishte-naate/mm3.jpeg" alt="Mr. Chander Kamal Grover" loading="lazy" width="120" height="120">
+          </div>
+          <h3 class="leader-name">Mr. Chander Kamal Grover</h3>
+          <span class="leader-designation">General Secretary</span>
+        </div>
+
+        <!-- 4. Treasurer -->
+        <div class="leader-portrait-card">
+          <div class="leader-avatar-frame">
+            <img src="assets/images/rishte-naate/mm4.jpeg" alt="Mr. Surinder Mohan Sharma" loading="lazy" width="120" height="120">
+          </div>
+          <h3 class="leader-name">Mr. Surinder Mohan Sharma</h3>
+          <span class="leader-designation">Treasurer</span>
+        </div>
+      </div>
+
+      <!-- Department Management Overview -->
+      <div class="dept-mgmt-wrap">
+        <div class="dept-mgmt-photo">
+          <img src="assets/images/rishte-naate/mgmt.jpeg" alt="Management Committee at Geeta Bhawan Mandir" loading="lazy" width="800" height="500">
+        </div>
+        <h3 class="dept-mgmt-title">Guided by Experience. Committed to Meaningful Relationships.</h3>
+        <p class="dept-mgmt-text">
+          The Rishte-Naate Vibhag operates with the support and guidance of its management, whose involvement contributes to the department’s continued development and its efforts to facilitate meaningful matrimonial connections.
+        </p>
+        <p class="dept-mgmt-note">
+          Management & committee members (including Mr. Maheshwari, Mr. Bhasin, and Mr. Pahwa) guide the operations of the department. Detailed portfolio records are maintained at the Mandir Karyalay.
+        </p>
+      </div>
+
+      <div class="ornament-divider"><span>🙏</span></div>
+    </div>
+  </section>
+
+  <!-- =======================================================================
+       SECTION 8: REGISTRATION & OFFICE GUIDELINES
+       ======================================================================= -->
+  <section class="section-registration" id="registration">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-pill">पंजीकरण एवं दिशानिर्देश • REGISTRATION</span>
+        <h2 class="section-title">
+          Registration & <span class="gold-text">Service Information</span>
+        </h2>
+        <p class="section-subtitle">
+          Verified fee structure and operational guidelines established at the Rishte-Naate Vibhag office counter.
+        </p>
+      </div>
+
+      <div class="guidelines-grid">
+        <!-- Normal Service -->
+        <div class="guideline-card">
+          <div>
+            <div class="guideline-icon">📋</div>
+            <h3 class="guideline-title">Normal Service</h3>
+            <p class="guideline-desc">
+              Standard registration including access to matrimonial record files, profile recommendations, and assistance from department volunteers.
+            </p>
+          </div>
+          <div>
+            <div class="service-fee-pill">₹2,100 /– Valid for 6 Months</div>
+          </div>
+        </div>
+
+        <!-- Super Service -->
+        <div class="guideline-card">
+          <div>
+            <div class="guideline-icon">⭐</div>
+            <h3 class="guideline-title">Super Service</h3>
+            <p class="guideline-desc">
+              Enhanced matchmaking service offering priority file access, specialised consultation, and focused assistance for families.
+            </p>
+          </div>
+          <div>
+            <div class="service-fee-pill">₹7,100 /– Valid for 6 Months</div>
+          </div>
+        </div>
+
+        <!-- File Viewing Hours -->
+        <div class="guideline-card">
+          <div>
+            <div class="guideline-icon">⏱️</div>
+            <h3 class="guideline-title">File Viewing Guidelines</h3>
+            <p class="guideline-desc">
+              Each registered member/family is allocated a dedicated file viewing time of <strong>2 hours</strong> per session to ensure fair access for all visitors.
+            </p>
+          </div>
+          <div>
+            <div class="service-fee-pill">Time to Show File: 2 Hours</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Additional verification notice -->
+      <div style="margin-top: 2.5rem; text-align: center; max-width: 680px; margin-left: auto; margin-right: auto;">
+        <p style="font-size: 0.86rem; color: var(--text-supporting); line-height: 1.7;">
+          📌 <em>Devotees are requested to bring a recent passport-size photograph, birth details/horoscope, and educational/family background for registration. Contact the Karyalay for specific timings on Sundays and public holidays.</em>
+        </p>
+      </div>
+
+      <div class="ornament-divider"><span>📝</span></div>
+    </div>
+  </section>
+
+  <!-- =======================================================================
+       SECTION 9: CONTACT & ENQUIRY CTA
+       ======================================================================= -->
+  <section class="section-contact-cta" id="contact">
+    <div class="container">
+      <div class="contact-box">
+        <span class="section-pill">संपर्क • GET IN TOUCH</span>
+        <h2 class="contact-box-title">Begin Your Journey Today</h2>
+        <p class="contact-box-text">
+          For matrimonial enquiries, registration, or visiting the Rishte-Naate Vibhag, please contact the Mandir Karyalay or visit us in person during temple hours.
+        </p>
+
+        <div class="contact-info-strip">
+          <div class="contact-info-item">
+            <span>📍</span>
+            <span>Geeta Bhawan Mandir, Kirti Nagar, New Delhi — 110015</span>
+          </div>
+          <div class="contact-info-item">
+            <span>📧</span>
+            <span>geetabhawankirtinagar@gmail.com</span>
+          </div>
+        </div>
+
+        <div class="contact-btn-group">
+          <a href="tel:01147000208" class="btn btn-gold-primary">
+            📞 011-47000208
+          </a>
+          <a href="tel:8810401428" class="btn btn-gold-outline">
+            📱 8810401428
+          </a>
+          <a href="index.html" class="btn btn-gold-outline">
+            🏠 Back to Mandir Homepage
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =======================================================================
+       FOOTER — LIGHT WARM THEMED
+       ======================================================================= -->
+  <footer class="site-footer-light">
+    <div class="footer-inner">
+      <div class="footer-logo-title">श्री गीता भवन मंदिर</div>
+      <div class="footer-logo-sub">Geeta Bhawan Mandir • Kirti Nagar, New Delhi</div>
+
+      <nav class="footer-nav-links" aria-label="Footer Navigation">
+        <a href="index.html">Home</a>
+        <a href="mandir-darshan.html">Mandir Darshan</a>
+        <a href="rishte-naate.html">Rishte-Naate Vibhag</a>
+        <a href="index.html#timings">Aarti & Timings</a>
+        <a href="index.html#gita-wisdom">Gita Wisdom</a>
+        <a href="index.html#visit">Contact</a>
+      </nav>
+
+      <p class="footer-copy">
+        © 2024 Geeta Bhawan Mandir, Kirti Nagar, New Delhi. Managed by Shri Geeta Bhawan Trust.<br>
+        Rishte-Naate Vibhag — Dedicated to sacred matrimonial unions rooted in Indian tradition and trust.
+      </p>
+    </div>
+  </footer>
+
+  <!-- =======================================================================
+       LIGHTBOX MODAL
+       ======================================================================= -->
+  <div class="lightbox-modal" id="lightbox-modal" role="dialog" aria-modal="true" aria-label="Photograph Zoom">
+    <button class="lightbox-close-btn" id="lightbox-close-btn" aria-label="Close Photograph">✕</button>
+    <img id="lightbox-img" src="" alt="Full view photograph">
+    <p class="lightbox-caption" id="lightbox-caption"></p>
+  </div>
+
+  <!-- =======================================================================
+       LIGHTWEIGHT CLIENT SCRIPT
+       ======================================================================= -->
+  <script>
+    (function() {
+      'use strict';
+
+      // Header scroll shadow
+      var header = document.getElementById('site-header');
+      window.addEventListener('scroll', function() {
+        if (window.scrollY > 40) {
+          header.classList.add('scrolled');
+        } else {
+          header.classList.remove('scrolled');
+        }
+      });
+
+      // Mobile Drawer
+      var menuBtn = document.getElementById('mobile-menu-btn');
+      var drawer = document.getElementById('mobile-drawer');
+      var drawerClose = document.getElementById('mobile-drawer-close');
+
+      if (menuBtn && drawer) {
+        menuBtn.addEventListener('click', function() {
+          drawer.classList.add('active');
+          document.body.style.overflow = 'hidden';
+        });
+      }
+
+      window.closeDrawer = function() {
+        if (drawer) {
+          drawer.classList.remove('active');
+          document.body.style.overflow = '';
+        }
+      };
+
+      if (drawerClose) {
+        drawerClose.addEventListener('click', window.closeDrawer);
+      }
+
+      // Lightbox Modal
+      var lightbox = document.getElementById('lightbox-modal');
+      var lightboxImg = document.getElementById('lightbox-img');
+      var lightboxCap = document.getElementById('lightbox-caption');
+      var lightboxClose = document.getElementById('lightbox-close-btn');
+
+      function openLightbox(src, cap) {
+        if (lightbox && lightboxImg) {
+          lightboxImg.src = src;
+          lightboxCap.textContent = cap || '';
+          lightbox.classList.add('active');
+          document.body.style.overflow = 'hidden';
+        }
+      }
+
+      function closeLightbox() {
+        if (lightbox) {
+          lightbox.classList.remove('active');
+          document.body.style.overflow = '';
+        }
+      }
+
+      if (lightboxClose) lightboxClose.addEventListener('click', closeLightbox);
+      if (lightbox) {
+        lightbox.addEventListener('click', function(e) {
+          if (e.target === lightbox) closeLightbox();
+        });
+      }
+
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') {
+          closeLightbox();
+          window.closeDrawer();
+        }
+      });
+
+      // Attach lightbox to gallery photos
+      var galleryCards = document.querySelectorAll('.gallery-photo-card');
+      galleryCards.forEach(function(card) {
+        card.addEventListener('click', function() {
+          var full = card.getAttribute('data-full');
+          var cap = card.getAttribute('data-caption');
+          if (full) openLightbox(full, cap);
+        });
+      });
+
+      // Attach lightbox to wedding cards
+      var weddingCards = document.querySelectorAll('.wedding-editorial-card');
+      weddingCards.forEach(function(card) {
+        card.addEventListener('click', function() {
+          var full = card.getAttribute('data-full');
+          var cap = card.getAttribute('data-caption');
+          if (full) openLightbox(full, cap);
+        });
+      });
+    })();
+  </script>
+</body>
+</html>
