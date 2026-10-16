@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mandir Darshan | पावन मंदिर दर्शन — Geeta Bhawan Mandir, New Delhi</title>
+  <meta name="description" content="Explore the divine sanctums of Geeta Bhawan Mandir, Kirti Nagar, New Delhi. Sacred darshan of Shri Laxmi Narayan, Shivalaya, Pardeshwar Ling, Mata Durga & Hanuman Ji, Saraswati Mata, Sai Baba, Sheetla Mata, and Vishnu Avatar.">
+  
+  <link rel="icon" type="image/png" href="assets/images/favicon.png">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Mandir Darshan | Geeta Bhawan Mandir, New Delhi">
+  <meta property="og:description" content="Experience the divine sanctums and sacred murtis consecrated under ancient Vedic traditions.">
+  <meta property="og:image" content="assets/images/darshan/laxmi-narayan.png">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700;900&family=Cinzel:wght@500;600;700;800&family=Noto+Serif+Devanagari:wght@400;500;600;700;800&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="assets/css/styles.css">
+
+  <style>
+    /* Dedicated Darshan Gallery Styles */
+    .darshan-hero {
+      position: relative;
+      padding: calc(var(--header-height) + 3.5rem) 1.5rem 3.5rem;
+      text-align: center;
+      background: radial-gradient(circle at center 30%, rgba(36, 18, 8, 0.6) 0%, var(--bg-midnight) 80%);
+      border-bottom: 1px solid rgba(217, 119, 6, 0.18);
+    }
+
+    .filter-bar {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.6rem;
+      flex-wrap: wrap;
+      margin: 2rem auto 0;
+      max-width: 980px;
+    }
+
+    .filter-btn {
+      padding: 0.45rem 1.1rem;
+      border-radius: 9999px;
+      background: rgba(24, 12, 5, 0.7);
+      border: 1px solid var(--gold-border);
+      color: var(--text-secondary);
+      font-family: var(--font-heading);
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      transition: all var(--transition-fast);
+      cursor: pointer;
+    }
+
+    .filter-btn:hover,
+    .filter-btn.active {
+      background: linear-gradient(135deg, rgba(217, 119, 6, 0.35) 0%, rgba(249, 115, 22, 0.25) 100%);
+      border-color: var(--gold-warm);
+      color: var(--gold-light);
+      box-shadow: 0 0 14px rgba(234, 179, 8, 0.2);
+    }
+
+    .deities-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 3rem;
+      padding: 4.5rem 0;
+    }
+
+    .deity-card {
+      background: var(--bg-card);
+      border: 1px solid var(--gold-border);
+      border-radius: 12px;
+      overflow: hidden;
+      backdrop-filter: blur(14px);
+      box-shadow: var(--shadow-lg);
+      transition: all var(--transition-normal);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .deity-card:hover {
+      transform: translateY(-6px);
+      border-color: var(--gold-border-bright);
+      box-shadow: var(--shadow-lg), 0 0 30px rgba(234, 179, 8, 0.15);
+    }
+
+    .deity-image-wrapper {
+      position: relative;
+      background: #080301;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      aspect-ratio: 4 / 3;
+      cursor: zoom-in;
+    }
+
+    .deity-image-wrapper img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      transition: transform 0.6s var(--ease-sacred);
+    }
+
+    .deity-card:hover .deity-image-wrapper img {
+      transform: scale(1.03);
+    }
+
+    .deity-zoom-hint {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      background: rgba(15, 7, 3, 0.75);
+      border: 1px solid var(--gold-border);
+      color: var(--gold-light);
+      padding: 0.35rem 0.75rem;
+      border-radius: 9999px;
+      font-size: 0.72rem;
+      font-family: var(--font-heading);
+      letter-spacing: 0.08em;
+      backdrop-filter: blur(8px);
+      opacity: 0.85;
+      transition: opacity var(--transition-fast);
+      display: flex;
+      align-items: center;
+      gap: 0.35rem;
+      pointer-events: none;
+    }
+
+    /* Thumbnail Selector for Multi-photo Sanctums */
+    .thumb-strip {
+      display: flex;
+      gap: 0.5rem;
+      padding: 0.75rem 1.25rem;
+      background: rgba(15, 7, 3, 0.8);
+      border-bottom: 1px solid rgba(217, 119, 6, 0.2);
+    }
+
+    .thumb-btn {
+      width: 54px;
+      height: 42px;
+      border-radius: 4px;
+      overflow: hidden;
+      border: 1.5px solid rgba(217, 119, 6, 0.3);
+      cursor: pointer;
+      opacity: 0.65;
+      transition: all var(--transition-fast);
+      padding: 0;
+      background: #000;
+    }
+
+    .thumb-btn img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .thumb-btn.active,
+    .thumb-btn:hover {
+      opacity: 1;
+      border-color: var(--gold-warm);
+      box-shadow: 0 0 10px rgba(234, 179, 8, 0.3);
+    }
+
+    .deity-content {
+      padding: 2rem 2.2rem;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+      justify-content: space-between;
+    }
+
+    .deity-badge {
+      display: inline-block;
+      font-family: var(--font-heading);
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--gold-warm);
+      background: rgba(234, 179, 8, 0.1);
+      padding: 0.25rem 0.7rem;
+      border-radius: 4px;
+      border: 1px solid rgba(234, 179, 8, 0.25);
+      margin-bottom: 0.75rem;
+      align-self: flex-start;
+    }
+
+    .deity-title-hindi {
+      font-family: var(--font-devanagari);
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: #fff;
+      line-height: 1.2;
+      margin-bottom: 0.25rem;
+    }
+
+    .deity-title-eng {
+      font-family: var(--font-heading);
+      font-size: 0.92rem;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      color: var(--gold-light);
+      margin-bottom: 1rem;
+    }
+
+    .deity-desc {
+      font-size: 0.92rem;
+      color: var(--text-secondary);
+      line-height: 1.7;
+      margin-bottom: 1.25rem;
+    }
+
+    .deity-meta-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      padding-top: 1.2rem;
+      border-top: 1px solid rgba(217, 119, 6, 0.15);
+      font-size: 0.82rem;
+      color: var(--text-muted);
+    }
+
+    .deity-meta-row {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .deity-meta-row strong {
+      color: var(--gold-warm);
+    }
+
+    /* Lightbox Modal */
+    .lightbox-modal {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.94);
+      backdrop-filter: blur(14px);
+      z-index: 4000;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 1.5rem;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity var(--transition-normal), visibility var(--transition-normal);
+    }
+
+    .lightbox-modal.open {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .lightbox-content {
+      position: relative;
+      max-width: 92vw;
+      max-height: 86vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .lightbox-img {
+      max-width: 90vw;
+      max-height: 76vh;
+      object-fit: contain;
+      border: 1px solid var(--gold-warm);
+      box-shadow: 0 0 50px rgba(0, 0, 0, 0.9), 0 0 35px rgba(234, 179, 8, 0.25);
+      border-radius: 8px;
+    }
+
+    .lightbox-caption {
+      margin-top: 1rem;
+      text-align: center;
+      color: var(--gold-light);
+      font-family: var(--font-heading);
+      font-size: 1.1rem;
+      letter-spacing: 0.08em;
+    }
+
+    .lightbox-close {
+      position: absolute;
+      top: -2.5rem;
+      right: 0;
+      color: #fff;
+      font-size: 2rem;
+      background: none;
+      border: none;
+      cursor: pointer;
+      line-height: 1;
+      transition: color var(--transition-fast);
+    }
+
+    .lightbox-close:hover {
+      color: var(--gold-warm);
+    }
+
+    @media (max-width: 1024px) {
+      .deities-grid {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Background 3D Sacred Canvas & Mandala -->
+  <svg class="mandala-bg" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <circle cx="200" cy="200" r="180" stroke="#eab308" stroke-width="1.2" stroke-dasharray="4 4" />
+    <circle cx="200" cy="200" r="140" stroke="#eab308" stroke-width="1" />
+    <circle cx="200" cy="200" r="100" stroke="#f97316" stroke-width="1.2" stroke-dasharray="6 3" />
+    <circle cx="200" cy="200" r="60" stroke="#eab308" stroke-width="1.5" />
+    <path d="M200 20 C230 100 230 140 200 180 C170 140 170 100 200 20 Z" stroke="#eab308" stroke-width="0.8" />
+    <path d="M200 380 C230 300 230 260 200 220 C170 260 170 300 200 380 Z" stroke="#eab308" stroke-width="0.8" />
+    <path d="M20 200 C100 230 140 230 180 200 C140 170 100 170 20 200 Z" stroke="#eab308" stroke-width="0.8" />
+    <path d="M380 200 C300 230 260 230 220 200 C260 170 300 170 380 200 Z" stroke="#eab308" stroke-width="0.8" />
+  </svg>
+
+  <canvas id="bg-sacred-3d-canvas" class="bg-sacred-3d-canvas" aria-hidden="true"></canvas>
+
+  <!-- Global Header -->
+  <header class="site-header scrolled" id="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="brand-link" aria-label="Geeta Bhawan Mandir Home">
+        <div class="brand-logo-wrap">
+          <img src="assets/images/mandir-logo.jpeg" alt="Geeta Bhawan Mandir Seal" class="brand-logo-img" width="52" height="52">
+        </div>
+        <div class="brand-text">
+          <span class="brand-title-hindi">गीता भवन</span>
+          <span class="brand-title-eng">GEETA BHAWAN MANDIR</span>
+          <span class="brand-loc">Kirti Nagar, New Delhi</span>
+        </div>
+      </a>
+
+      <nav class="desktop-nav" aria-label="Primary Navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="index.html#about" class="nav-link">About Us</a>
+        <a href="mandir-darshan.html" class="nav-link active">Mandir Darshan</a>
+        <a href="rishte-naate.html" class="nav-link">Rishte-Naate</a>
+        <a href="index.html#timings" class="nav-link">Aarti & Pooja</a>
+        <a href="index.html#festivals" class="nav-link">Events & Festivals</a>
+        <a href="#" class="nav-link phase2-future-link" data-feature="Photo Gallery (चित्र दीर्घा)">Gallery</a>
+        <a href="index.html#visit" class="nav-link">Contact Us</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="audio-btn" id="toggle-audio-btn" aria-label="Toggle Meditative Temple Sound Synthesis" aria-pressed="false" title="Click for synthesized Tanpura & Bell">
+          <span class="audio-indicator" aria-hidden="true"></span>
+          <span class="audio-text">Acoustic Sound</span>
+        </button>
+
+        <a href="tel:01147000208" class="cta-header-btn" title="Call Mandir Karyalay">
+          <span>011-47000208</span>
+        </a>
+
+        <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle Navigation Menu" aria-expanded="false" aria-controls="mobile-nav-drawer">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-nav-drawer" id="mobile-nav-drawer" aria-label="Mobile Navigation">
+    <a href="index.html" class="mobile-nav-link"><span>Home (मुख्य पृष्ठ)</span><span>&rarr;</span></a>
+    <a href="index.html#about" class="mobile-nav-link"><span>About Us (परिचय)</span><span>&rarr;</span></a>
+    <a href="mandir-darshan.html" class="mobile-nav-link active"><span>Mandir Darshan (पावन दर्शन)</span><span>&rarr;</span></a>
+    <a href="rishte-naate.html" class="mobile-nav-link"><span>Rishte-Naate Vibhag (रिश्ते-नाते)</span><span>&rarr;</span></a>
+    <a href="index.html#timings" class="mobile-nav-link"><span>Aarti & Pooja (आरती व समय)</span><span>&rarr;</span></a>
+    <a href="index.html#festivals" class="mobile-nav-link"><span>Events & Festivals (उत्सव)</span><span>&rarr;</span></a>
+    <a href="#" class="mobile-nav-link phase2-future-link" data-feature="Photo Gallery (चित्र दीर्घा)"><span>Gallery</span><span class="special-badge">Phase 2</span></a>
+    <a href="index.html#visit" class="mobile-nav-link"><span>Contact Us (संपर्क)</span><span>&rarr;</span></a>
+  </div>
+
+  <main>
+    <!-- Darshan Hero Section -->
+    <section class="darshan-hero">
+      <div class="container">
+        <span class="section-label">॥ ॐ नमो भगवते वासुदेवाय ॥ • पवित्र गर्भगृह दर्शन</span>
+        <h1 class="section-title">पावन मंदिर दर्शन • <span class="gold-accent">Sacred Deities</span></h1>
+        <p class="section-subtitle">
+          Experience the divine presence across the consecrated sanctums of Geeta Bhawan Mandir, adorned with daily Vedic shringar, holy archana, and eternal devotion.
+        </p>
+
+        <!-- Category Filter Pills -->
+        <div class="filter-bar" role="tablist">
+          <button class="filter-btn active" data-filter="all">All Sanctums (सभी मंदिर)</button>
+          <button class="filter-btn" data-filter="laxmi-narayan">Shri Laxmi Narayan</button>
+          <button class="filter-btn" data-filter="shivalaya">Shivalaya</button>
+          <button class="filter-btn" data-filter="pardeshwar">Pardeshwar Ling</button>
+          <button class="filter-btn" data-filter="mata-hanuman">Mata & Hanuman</button>
+          <button class="filter-btn" data-filter="saraswati">Saraswati Mata</button>
+          <button class="filter-btn" data-filter="sai-baba">Sai Baba</button>
+          <button class="filter-btn" data-filter="vishnu-avatar">Vishnu Dashavatar</button>
+          <button class="filter-btn" data-filter="sheetla-mata">Sheetla Mata</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Deities Gallery Section -->
+    <section style="background-color: var(--bg-deep); padding: 1rem 1.5rem 5rem;">
+      <div class="container">
+        <div class="deities-grid" id="deities-container">
+
+          <!-- 1. Shri Laxmi Narayan Mandir -->
+          <article class="deity-card" data-category="laxmi-narayan">
+            <div class="deity-image-wrapper" data-full-src="assets/images/darshan/laxmi-narayan.png" data-caption="श्री लक्ष्मी नारायण मंदिर — Geeta Bhawan Mandir">
+              <img src="assets/images/darshan/laxmi-narayan.png" alt="श्री लक्ष्मी नारायण मंदिर, Geeta Bhawan Mandir" loading="eager" width="800" height="638">
+              <span class="deity-zoom-hint">🔍 Click to Zoom</span>
+            </div>
+            <div class="deity-content">
+              <div>
+                <span class="deity-badge">Principal Sanctum</span>
+                <h2 class="deity-title-hindi">श्री लक्ष्मी नारायण मंदिर</h2>
+                <div class="deity-title-eng">SHRI LAXMI NARAYAN MANDIR</div>
+                <p class="deity-desc">
+                  The central sanctum sanctorum of Geeta Bhawan enshrines Bhagwan Shri Vishnu and Devi Mahalakshmi, flanked by Shri Radha-Krishna and Shri Ram Darbar in exquisite white marble under carved canopies. Adorned in radiant golden pitambar vastra and peacock-feathered mukuts.
+                </p>
+              </div>
+              <div class="deity-meta-list">
+                <div class="deity-meta-row">
+                  <span>🕉️ <strong>Deities:</strong> Bhagwan Vishnu, Devi Lakshmi, Radha-Krishna, Ram Darbar</span>
+                </div>
+                <div class="deity-meta-row">
+                  <span>🪔 <strong>Key Rituals:</strong> Daily Shringar, Rajbhog, and Maha Sandhya Aarti</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- 2. Shivalaya (With 3 Photos Switcher) -->
+          <article class="deity-card" data-category="shivalaya">
+            <div class="deity-image-wrapper" id="shivalaya-main-view" data-full-src="assets/images/darshan/shivalaya-1.png" data-caption="शिवालय — शिव परिवार (Mahadev Shiva, Mata Parvati & Ganesh Ji)">
+              <img id="shivalaya-active-img" src="assets/images/darshan/shivalaya-1.png" alt="Shivalaya sanctum, Geeta Bhawan Mandir" loading="eager" width="800" height="638">
+              <span class="deity-zoom-hint">🔍 Click to Zoom</span>
+            </div>
+
+            <!-- Thumbnail Selector for Shivalaya's 3 Photos -->
+            <div class="thumb-strip">
+              <button class="thumb-btn active" data-src="assets/images/darshan/shivalaya-1.png" data-caption="शिवालय — शिव परिवार (Mahadev Shiva, Mata Parvati & Ganesh Ji)" title="Shiv Parivar Shringar">
+                <img src="assets/images/darshan/shivalaya-1.png" alt="Shiv Parivar">
+              </button>
+              <button class="thumb-btn" data-src="assets/images/darshan/shivalaya-2.png" data-caption="शिवालय — सम्पूर्ण गर्भगृह दर्शन (Wide Sanctum View)" title="Sanctum Wide View">
+                <img src="assets/images/darshan/shivalaya-2.png" alt="Wide Shivalaya">
+              </button>
+              <button class="thumb-btn" data-src="assets/images/darshan/shivalaya-3.png" data-caption="शिवालय — पवित्र शिवलिंग एवं जलाभिषेक मंत्र फलक" title="Shivalingam Jalabhishek">
+                <img src="assets/images/darshan/shivalaya-3.png" alt="Shivalingam">
+              </button>
+              <span style="font-size: 0.72rem; color: var(--gold-light); align-self: center; margin-left: 0.5rem;">3 Sanctum Views</span>
+            </div>
+
+            <div class="deity-content">
+              <div>
+                <span class="deity-badge">Mahadev Sanctum</span>
+                <h2 class="deity-title-hindi">शिवालय — शिव परिवार एवं शिवलिंग</h2>
+                <div class="deity-title-eng">SHIVALAYA & SHIVALINGAM</div>
+                <p class="deity-desc">
+                  The holy Shivalaya is home to Mahadev Shiva, Mata Parvati, and Shri Ganesh Ji adorned in celestial vastra, as well as the consecrated white marble Jalabhishek Kund enshrining the dark stone Shivalingam with Nandi Maharaj and sacred Vedic mantra inscriptions.
+                </p>
+              </div>
+              <div class="deity-meta-list">
+                <div class="deity-meta-row">
+                  <span>🕉️ <strong>Deities:</strong> Lord Shiva, Mata Parvati, Lord Ganesha, Nandi Ji</span>
+                </div>
+                <div class="deity-meta-row">
+                  <span>🌿 <strong>Key Rituals:</strong> Daily Jalabhishek, Bilva Patra Archana, Maha Shivratri 4-Pahar Puja</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- 3. Pardeshwar Ling (With 2 Photos Switcher) -->
+          <article class="deity-card" data-category="pardeshwar">
+            <div class="deity-image-wrapper" id="pardeshwar-main-view" data-full-src="assets/images/darshan/pardeshwar-ling-1.png" data-caption="पारदेश्वर शिवलिंग — दिव्य हिम गुफा गर्भगृह (Sacred Cave Sanctum)">
+              <img id="pardeshwar-active-img" src="assets/images/darshan/pardeshwar-ling-1.png" alt="Pardeshwar Ling cave sanctum, Geeta Bhawan Mandir" loading="lazy" width="800" height="638">
+              <span class="deity-zoom-hint">🔍 Click to Zoom</span>
+            </div>
+
+            <div class="thumb-strip">
+              <button class="thumb-btn active" data-src="assets/images/darshan/pardeshwar-ling-1.png" data-caption="पारदेश्वर शिवलिंग — दिव्य हिम गुफा गर्भगृह" title="Himalayan Cave View">
+                <img src="assets/images/darshan/pardeshwar-ling-1.png" alt="Cave View">
+              </button>
+              <button class="thumb-btn" data-src="assets/images/darshan/pardeshwar-ling-2.png" data-caption="पारदेश्वर शिवलिंग — साक्षात् पारद लिंग दर्शन (Close Darshan)" title="Close Sacred Darshan">
+                <img src="assets/images/darshan/pardeshwar-ling-2.png" alt="Close Darshan">
+              </button>
+              <span style="font-size: 0.72rem; color: var(--gold-light); align-self: center; margin-left: 0.5rem;">2 Cave Views</span>
+            </div>
+
+            <div class="deity-content">
+              <div>
+                <span class="deity-badge">Rare Mercury Lingam</span>
+                <h2 class="deity-title-hindi">पारदेश्वर शिवलिंग</h2>
+                <div class="deity-title-eng">PARDESHWAR LING SANCTUM</div>
+                <p class="deity-desc">
+                  Consecrated inside an enchanting Himalayan cave-like sanctum illuminated in celestial azure light, the rare mercury (Paarad) Shivalinga is guarded by the divine multi-headed Nagraj, wooden bridge, and floral offerings. Worshipped for supreme spiritual purification.
+                </p>
+              </div>
+              <div class="deity-meta-list">
+                <div class="deity-meta-row">
+                  <span>🕉️ <strong>Significance:</strong> Consecrated mercury (Paarad) Shivalinga with Nagraj</span>
+                </div>
+                <div class="deity-meta-row">
+                  <span>🙏 <strong>Tradition:</strong> Pavitra Darshan & Meditative Dhyana</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- 4. Mata Durga and Hanuman Mandir -->
+          <article class="deity-card" data-category="mata-hanuman">
+            <div class="deity-image-wrapper" data-full-src="assets/images/darshan/mata-hanuman.png" data-caption="माँ दुर्गा एवं संकटमोचन हनुमान मंदिर — Geeta Bhawan Mandir">
+              <img src="assets/images/darshan/mata-hanuman.png" alt="Mata and Hanuman Mandir, Geeta Bhawan Mandir" loading="lazy" width="800" height="638">
+              <span class="deity-zoom-hint">🔍 Click to Zoom</span>
+            </div>
+            <div class="deity-content">
+              <div>
+                <span class="deity-badge">Shakti & Bhakti Sanctum</span>
+                <h2 class="deity-title-hindi">माँ दुर्गा एवं श्री हनुमान मंदिर</h2>
+                <div class="deity-title-eng">MATA & HANUMAN MANDIR</div>
+                <p class="deity-desc">
+                  Set beneath an opulent, carved golden ceiling with an auspicious brass temple bell, this divine sanctum houses Sherawali Mata Durga in celestial white-and-silver vastra, and Sankatmochan Veer Hanuman Ji holding the Sanjeevani mountain in radiant shringar.
+                </p>
+              </div>
+              <div class="deity-meta-list">
+                <div class="deity-meta-row">
+                  <span>🕉️ <strong>Deities:</strong> Maa Durga, Shri Hanuman Ji</span>
+                </div>
+                <div class="deity-meta-row">
+                  <span>📖 <strong>Key Rituals:</strong> Weekly Tuesday Sundarkand Path (6:00 PM) & Navratri Pujan</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- 5. Saraswati Mata Mandir -->
+          <article class="deity-card" data-category="saraswati">
+            <div class="deity-image-wrapper" data-full-src="assets/images/darshan/saraswati-mata.png" data-caption="माँ सरस्वती मंदिर — देवी विद्या एवं संगीत (Goddess of Knowledge & Arts)">
+              <img src="assets/images/darshan/saraswati-mata.png" alt="Saraswati Mata Mandir, Geeta Bhawan Mandir" loading="lazy" width="800" height="638">
+              <span class="deity-zoom-hint">🔍 Click to Zoom</span>
+            </div>
+            <div class="deity-content">
+              <div>
+                <span class="deity-badge">Vidya & Sangeet Sanctum</span>
+                <h2 class="deity-title-hindi">माँ सरस्वती मंदिर</h2>
+                <div class="deity-title-eng">SARASWATI MATA MANDIR</div>
+                <p class="deity-desc">
+                  Devi Saraswati, the goddess of knowledge, wisdom, arts, eloquence, and music, is enshrined holding the sacred Veena. Devotees and students seek Her compassionate blessings for intellectual clarity and spiritual awakening.
+                </p>
+              </div>
+              <div class="deity-meta-list">
+                <div class="deity-meta-row">
+                  <span>🕉️ <strong>Deity:</strong> Devi Saraswati (Goddess of Learning & Arts)</span>
+                </div>
+                <div class="deity-meta-row">
+                  <span>🌸 <strong>Key Rituals:</strong> Vasant Panchami Mahotsav, Student Vidyarambha Blessings</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- 6. Shri Sai Baba Mandir -->
+          <article class="deity-card" data-category="sai-baba">
+            <div class="deity-image-wrapper" data-full-src="assets/images/darshan/sai-baba.png" data-caption="श्री साईं बाबा मंदिर — श्रद्धा एवं सबूरी (Shraddha & Saburi)">
+              <img src="assets/images/darshan/sai-baba.png" alt="Shri Sai Baba Mandir, Geeta Bhawan Mandir" loading="lazy" width="800" height="638">
+              <span class="deity-zoom-hint">🔍 Click to Zoom</span>
+            </div>
+            <div class="deity-content">
+              <div>
+                <span class="deity-badge">Shraddha & Saburi Sanctum</span>
+                <h2 class="deity-title-hindi">श्री साईं बाबा मंदिर</h2>
+                <div class="deity-title-eng">SHRI SAI BABA MANDIR</div>
+                <p class="deity-desc">
+                  The sacred sanctum of Shri Sai Baba of Shirdi is set with golden draping, silver pillars, and the eternal teachings of <em>"श्रद्धा"</em> (Unwavering Faith) and <em>"सबूरी"</em> (Patience). Devotees gather for peaceful dhyana and divine blessings.
+                </p>
+              </div>
+              <div class="deity-meta-list">
+                <div class="deity-meta-row">
+                  <span>🕉️ <strong>Deity:</strong> Shri Sai Baba</span>
+                </div>
+                <div class="deity-meta-row">
+                  <span>🪔 <strong>Key Rituals:</strong> Thursday Special Prayers, Dhoop Aarti & Bhog Offering</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- 7. Bhagwan Vishnu Dashavatar -->
+          <article class="deity-card" data-category="vishnu-avatar">
+            <div class="deity-image-wrapper" data-full-src="assets/images/darshan/vishnu-avatar.png" data-caption="भगवान विष्णु के दशावतार — सुदर्शन चक्रधारी नारायण">
+              <img src="assets/images/darshan/vishnu-avatar.png" alt="Bhagwan Vishnu Dashavatar murti, Geeta Bhawan Mandir" loading="lazy" width="800" height="638">
+              <span class="deity-zoom-hint">🔍 Click to Zoom</span>
+            </div>
+            <div class="deity-content">
+              <div>
+                <span class="deity-badge">Cosmic Preserver</span>
+                <h2 class="deity-title-hindi">भगवान विष्णु के दशावतार</h2>
+                <div class="deity-title-eng">VISHNU DASHAVATAR SANCTUM</div>
+                <p class="deity-desc">
+                  A grand sacred murti of Bhagwan Vishnu holding the divine Sudarshana Chakra aloft, dressed in resplendent golden pitambar vastra. Honoring the ten divine incarnations who descend to re-establish righteousness (Dharma) across cosmic yugas.
+                </p>
+              </div>
+              <div class="deity-meta-list">
+                <div class="deity-meta-row">
+                  <span>🕉️ <strong>Deity:</strong> Bhagwan Vishnu (Sudarshana Chakra Swaroop)</span>
+                </div>
+                <div class="deity-meta-row">
+                  <span>📜 <strong>Key Rituals:</strong> Ekadashi Vrat Pujan, Vishnu Sahasranama Archana</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- 8. Sheetla Mata Mandir -->
+          <article class="deity-card" data-category="sheetla-mata">
+            <div class="deity-image-wrapper" data-full-src="assets/images/darshan/sheetla-mata.png" data-caption="माँ शीतला मंदिर — Geeta Bhawan Mandir">
+              <img src="assets/images/darshan/sheetla-mata.png" alt="Mata Sheetla Ji sanctum, Geeta Bhawan Mandir" loading="lazy" width="800" height="638">
+              <span class="deity-zoom-hint">🔍 Click to Zoom</span>
+            </div>
+            <div class="deity-content">
+              <div>
+                <span class="deity-badge">Arogya & Raksha Sanctum</span>
+                <h2 class="deity-title-hindi">माँ शीतला मंदिर</h2>
+                <div class="deity-title-eng">SHEETLA MATA MANDIR</div>
+                <p class="deity-desc">
+                  Revered for granting protection against illnesses, good health, and cooling peace of mind. Families and devotees regularly offer prayers to seek the divine maternal protection of Mata Sheetla Ji.
+                </p>
+              </div>
+              <div class="deity-meta-list">
+                <div class="deity-meta-row">
+                  <span>🕉️ <strong>Deity:</strong> Mata Sheetla Ji</span>
+                </div>
+                <div class="deity-meta-row">
+                  <span>🪔 <strong>Key Rituals:</strong> Sheetla Ashtami Pujan & Health Protection Prayers</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to Visit Section -->
+    <section style="background: var(--bg-midnight); border-top: 1px solid rgba(217, 119, 6, 0.2); padding: 4.5rem 1.5rem; text-align: center;">
+      <div class="container" style="max-width: 700px;">
+        <span class="section-label">दैनिक दर्शन समय • DARSHAN TIMINGS</span>
+        <h2 class="section-title">Visit the <span class="gold-accent">Sacred Sanctums</span></h2>
+        <p style="color: var(--text-secondary); margin-bottom: 2rem; font-size: 1.05rem;">
+          Morning Darshan: <strong>5:00 AM – 11:00 AM</strong> &nbsp;|&nbsp; Evening Darshan: <strong>4:30 PM – 9:00 PM</strong><br>
+          Morning Satsang: <strong>7:00 AM – 8:00 AM</strong> &nbsp;|&nbsp; Tuesday Sundarkand: <strong>6:00 PM</strong>
+        </p>
+        <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+          <a href="index.html#timings" class="btn btn-primary">
+            <span>View Complete Timetable</span>
+          </a>
+          <a href="index.html#visit" class="btn btn-secondary">
+            <span>Get Directions to Mandir</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Global Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-brand-header">
+            <div class="footer-logo">
+              <img src="assets/images/mandir-logo.jpeg" alt="Geeta Bhawan Mandir Emblem" width="58" height="58">
+            </div>
+            <div>
+              <div class="footer-title-hindi">गीता भवन</div>
+              <div class="footer-title-eng">GEETA BHAWAN MANDIR</div>
+              <div class="footer-org">Kirti Nagar Shree Sanatan Dharam Sabha (Regd.)</div>
+            </div>
+          </div>
+          <p class="footer-credo">
+            "DEDICATED TO CELEBRATE RELIGION, CULTURE, LOVE AND FAITH TOWARDS OUR OMNIPRESENT GOD."
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <nav class="footer-nav" aria-label="Footer Navigation">
+            <a href="index.html">Home (मुख्य पृष्ठ)</a>
+            <a href="index.html#about">About Us (परिचय)</a>
+            <a href="mandir-darshan.html">Mandir Darshan (दर्शन)</a>
+            <a href="rishte-naate.html">Rishte-Naate Vibhag (रिश्ते-नाते)</a>
+            <a href="index.html#timings">Aarti & Timings (समय)</a>
+            <a href="index.html#festivals">Festivals (पर्व)</a>
+            <a href="index.html#visit">Contact Us (संपर्क)</a>
+          </nav>
+        </div>
+
+        <div class="footer-col">
+          <h4>पावन मंदिर</h4>
+          <div class="footer-nav">
+            <a href="#deities-container">Shri Laxmi Narayan</a>
+            <a href="#deities-container">Shivalaya</a>
+            <a href="#deities-container">Pardeshwar Ling</a>
+            <a href="#deities-container">Mata & Hanuman Mandir</a>
+            <a href="#deities-container">Saraswati Mata</a>
+            <a href="#deities-container">Sai Baba</a>
+            <a href="#deities-container">Vishnu Dashavatar</a>
+            <a href="#deities-container">Sheetla Mata</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Mandir Karyalay</h4>
+          <div class="footer-contact-list">
+            <div>
+              <strong style="color: var(--text-secondary);">Address:</strong><br>
+              A-35, Kirti Nagar, New Delhi – 110015
+            </div>
+            <div>
+              <strong style="color: var(--text-secondary);">Telephone:</strong><br>
+              <a href="tel:01147000208" style="color: var(--gold-light);">011-47000208</a><br>
+              <a href="tel:8810401428" style="color: var(--gold-light);">+91 8810401428</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2026 Geeta Bhawan Mandir. All rights reserved.</div>
+        <div><a href="index.html" style="color: var(--gold-warm);">Back to Home ↑</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lightbox Modal -->
+  <div class="lightbox-modal" id="lightbox-modal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="lightbox-content">
+      <button class="lightbox-close" id="lightbox-close" aria-label="Close Lightbox">&times;</button>
+      <img class="lightbox-img" id="lightbox-img" src="" alt="Enlarged Deity Photograph">
+      <div class="lightbox-caption" id="lightbox-caption"></div>
+    </div>
+  </div>
+
+  <!-- Toast Notice -->
+  <div class="toast-notice" id="toast-notice" role="status" aria-live="polite">
+    <span aria-hidden="true">🕉️</span>
+    <span class="toast-text">Notification message</span>
+  </div>
+
+  <!-- Scripts -->
+  <script src="assets/js/bundle.js"></script>
+
+  <script>
+    // Category Filtering Logic
+    document.addEventListener('DOMContentLoaded', () => {
+      const filterBtns = document.querySelectorAll('.filter-btn');
+      const cards = document.querySelectorAll('.deity-card');
+
+      filterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          filterBtns.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+
+          const filter = btn.getAttribute('data-filter');
+          cards.forEach(card => {
+            if (filter === 'all' || card.getAttribute('data-category') === filter) {
+              card.style.display = 'flex';
+            } else {
+              card.style.display = 'none';
+            }
+          });
+        });
+      });
+
+      // Multi-Photo Switcher for Shivalaya & Pardeshwar Ling
+      document.querySelectorAll('.thumb-strip').forEach(strip => {
+        const thumbBtns = strip.querySelectorAll('.thumb-btn');
+        const parentCard = strip.closest('.deity-card');
+        const mainWrapper = parentCard.querySelector('.deity-image-wrapper');
+        const mainImg = mainWrapper.querySelector('img');
+
+        thumbBtns.forEach(tBtn => {
+          tBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            thumbBtns.forEach(b => b.classList.remove('active'));
+            tBtn.classList.add('active');
+
+            const newSrc = tBtn.getAttribute('data-src');
+            const newCaption = tBtn.getAttribute('data-caption');
+
+            mainImg.src = newSrc;
+            mainWrapper.setAttribute('data-full-src', newSrc);
+            mainWrapper.setAttribute('data-caption', newCaption);
+          });
+        });
+      });
+
+      // Lightbox Zoom Logic
+      const lightboxModal = document.getElementById('lightbox-modal');
+      const lightboxImg = document.getElementById('lightbox-img');
+      const lightboxCaption = document.getElementById('lightbox-caption');
+      const lightboxClose = document.getElementById('lightbox-close');
+
+      document.querySelectorAll('.deity-image-wrapper').forEach(wrapper => {
+        wrapper.addEventListener('click', () => {
+          const fullSrc = wrapper.getAttribute('data-full-src');
+          const caption = wrapper.getAttribute('data-caption');
+
+          if (!fullSrc) return;
+
+          lightboxImg.src = fullSrc;
+          lightboxCaption.textContent = caption || '';
+          lightboxModal.classList.add('open');
+          lightboxModal.setAttribute('aria-hidden', 'false');
+          document.body.style.overflow = 'hidden';
+        });
+      });
+
+      function closeLightbox() {
+        lightboxModal.classList.remove('open');
+        lightboxModal.setAttribute('aria-hidden', 'true');
+        document.body.style.overflow = '';
+      }
+
+      if (lightboxClose) {
+        lightboxClose.addEventListener('click', closeLightbox);
+      }
+
+      if (lightboxModal) {
+        lightboxModal.addEventListener('click', (e) => {
+          if (e.target === lightboxModal) closeLightbox();
+        });
+      }
+
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') closeLightbox();
+      });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,1084 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Geeta Bhawan Mandir | Kirti Nagar, New Delhi — Official Website</title>
+  <meta name="description" content="Welcome to Geeta Bhawan Mandir, Kirti Nagar, New Delhi. A 40+ year sacred institution dedicated to faith, cultural heritage, Bhagavad Gita wisdom, and community welfare.">
+  <meta name="keywords" content="Geeta Bhawan, Geeta Bhawan Mandir, Kirti Nagar Mandir, Delhi Mandir, Laxmi Narayan Mandir, Darshan Timings, Sundarkand Path, Navratri Mandir Delhi">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/images/favicon.png">
+
+  <!-- Open Graph / Meta -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Geeta Bhawan Mandir | Kirti Nagar, New Delhi">
+  <meta property="og:description" content="A sacred sanctuary of devotion, the eternal wisdom of the Bhagavad Gita, and compassionate community service.">
+  <meta property="og:image" content="assets/images/hero-mandir.png">
+
+  <!-- Google Fonts Preconnect & Styles -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700;900&family=Cinzel:wght@500;600;700;800&family=Noto+Serif+Devanagari:wght@400;500;600;700;800&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Core CSS Styles -->
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+  <!-- =========================================================================
+       GLOBAL BACKGROUND MANDALA WATERMARK (Subtle Slow Cosmic Geometry)
+       ========================================================================= -->
+  <svg class="mandala-bg" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <circle cx="200" cy="200" r="180" stroke="#eab308" stroke-width="1.2" stroke-dasharray="4 4" />
+    <circle cx="200" cy="200" r="140" stroke="#eab308" stroke-width="1" />
+    <circle cx="200" cy="200" r="100" stroke="#f97316" stroke-width="1.2" stroke-dasharray="6 3" />
+    <circle cx="200" cy="200" r="60" stroke="#eab308" stroke-width="1.5" />
+    <!-- 8 Lotus Petal Geometries -->
+    <path d="M200 20 C230 100 230 140 200 180 C170 140 170 100 200 20 Z" stroke="#eab308" stroke-width="0.8" />
+    <path d="M200 380 C230 300 230 260 200 220 C170 260 170 300 200 380 Z" stroke="#eab308" stroke-width="0.8" />
+    <path d="M20 200 C100 230 140 230 180 200 C140 170 100 170 20 200 Z" stroke="#eab308" stroke-width="0.8" />
+    <path d="M380 200 C300 230 260 230 220 200 C260 170 300 170 380 200 Z" stroke="#eab308" stroke-width="0.8" />
+    <path d="M72 72 C140 120 160 140 170 180 C130 170 110 150 72 72 Z" stroke="#eab308" stroke-width="0.8" />
+    <path d="M328 328 C260 280 240 260 230 220 C270 230 290 250 328 328 Z" stroke="#eab308" stroke-width="0.8" />
+    <path d="M328 72 C280 140 260 160 220 170 C230 130 250 110 328 72 Z" stroke="#eab308" stroke-width="0.8" />
+    <path d="M72 328 C120 260 140 240 170 230 C160 270 140 290 72 328 Z" stroke="#eab308" stroke-width="0.8" />
+  </svg>
+
+  <!-- =========================================================================
+       SACRED 3D BACKGROUND CANVAS (3D Embers, Geometric Rings & Tumbling Petals)
+       ========================================================================= -->
+  <canvas id="bg-sacred-3d-canvas" class="bg-sacred-3d-canvas" aria-hidden="true"></canvas>
+
+  <!-- =========================================================================
+       GLOBAL NAVIGATION HEADER
+       ========================================================================= -->
+  <header class="site-header" id="site-header">
+    <div class="header-inner">
+      <!-- Brand Identity -->
+      <a href="#hero" class="brand-link" aria-label="Geeta Bhawan Mandir Home">
+        <div class="brand-logo-wrap">
+          <img src="assets/images/mandir-logo.jpeg" alt="Geeta Bhawan Mandir Seal" class="brand-logo-img" width="52" height="52">
+        </div>
+        <div class="brand-text">
+          <span class="brand-title-hindi">गीता भवन</span>
+          <span class="brand-title-eng">GEETA BHAWAN MANDIR</span>
+          <span class="brand-loc">Kirti Nagar, New Delhi</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="desktop-nav" aria-label="Primary Navigation">
+        <a href="#hero" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About Us</a>
+        <a href="mandir-darshan.html" class="nav-link">Mandir Darshan</a>
+        <a href="rishte-naate.html" class="nav-link">Rishte-Naate</a>
+        <a href="#timings" class="nav-link">Aarti & Pooja</a>
+        <a href="#festivals" class="nav-link">Events & Festivals</a>
+        <a href="#" class="nav-link phase2-future-link" data-feature="Photo Gallery (चित्र दीर्घा)">Gallery</a>
+        <a href="#visit" class="nav-link">Contact Us</a>
+      </nav>
+
+      <!-- Action Items: Audio Bell & Mandir Call -->
+      <div class="nav-actions">
+        <!-- Pure Web Audio Synthesizer Toggle -->
+        <button class="audio-btn" id="toggle-audio-btn" aria-label="Toggle Meditative Temple Sound Synthesis" aria-pressed="false" title="Click to experience live Web Audio synthesized Tanpura & Bell">
+          <span class="audio-indicator" aria-hidden="true"></span>
+          <span class="audio-text">Acoustic Sound</span>
+        </button>
+
+        <!-- Karyalay Call Link -->
+        <a href="tel:01147000208" class="cta-header-btn" title="Call Mandir Karyalay">
+          <span>011-47000208</span>
+        </a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle Navigation Menu" aria-expanded="false" aria-controls="mobile-nav-drawer">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-nav-drawer" id="mobile-nav-drawer" aria-label="Mobile Navigation">
+    <a href="#hero" class="mobile-nav-link active">
+      <span>Home (मुख्य पृष्ठ)</span>
+      <span>&rarr;</span>
+    </a>
+    <a href="#about" class="mobile-nav-link">
+      <span>About Us (परिचय एवं इतिहास)</span>
+      <span>&rarr;</span>
+    </a>
+    <a href="mandir-darshan.html" class="mobile-nav-link">
+      <span>Mandir Darshan (पावन मंदिर दर्शन)</span>
+      <span>&rarr;</span>
+    </a>
+    <a href="rishte-naate.html" class="mobile-nav-link">
+      <span>Rishte-Naate Vibhag (रिश्ते-नाते विभाग)</span>
+      <span>&rarr;</span>
+    </a>
+    <a href="#timings" class="mobile-nav-link">
+      <span>Aarti & Pooja (आरती व दर्शन समय)</span>
+      <span>&rarr;</span>
+    </a>
+    <a href="#festivals" class="mobile-nav-link">
+      <span>Events & Festivals (उत्सव व पर्व)</span>
+      <span>&rarr;</span>
+    </a>
+    <a href="#" class="mobile-nav-link phase2-future-link" data-feature="Photo Gallery (चित्र दीर्घा)">
+      <span>Gallery (चित्र दीर्घा)</span>
+      <span class="special-badge" style="font-size:0.65rem; margin-bottom:0;">Phase 2</span>
+    </a>
+    <a href="#visit" class="mobile-nav-link">
+      <span>Contact Us (मंदिर आगमन व संपर्क)</span>
+      <span>&rarr;</span>
+    </a>
+
+    <div style="margin-top: 1.5rem; display: flex; flex-direction: column; gap: 0.9rem;">
+      <button class="audio-btn" id="toggle-audio-btn-mobile" style="width: 100%; justify-content: center; padding: 0.75rem;">
+        <span class="audio-indicator"></span>
+        <span class="audio-text">Acoustic Sound (तानपुरा व घंटी)</span>
+      </button>
+
+      <a href="tel:01147000208" class="btn btn-primary" style="width: 100%;">
+        📞 Call Mandir Karyalay
+      </a>
+    </div>
+  </div>
+
+  <main id="main-content">
+    <!-- =======================================================================
+         SECTION ONE — CINEMATIC FULL-SCREEN HERO
+         ======================================================================= -->
+    <section class="hero-section" id="hero" aria-label="Geeta Bhawan Mandir Introduction">
+      <!-- Authentic Temple Photograph Background -->
+      <div class="hero-media-wrapper">
+        <picture>
+          <img 
+            src="assets/images/hero-mandir.png" 
+            alt="Geeta Bhawan Mandir white marble shikhara temple façade at dawn" 
+            class="hero-photograph"
+            width="1670" 
+            height="941"
+            loading="eager"
+            fetchpriority="high"
+          >
+        </picture>
+        <div class="hero-overlay-top"></div>
+        <div class="hero-overlay-center"></div>
+        <div class="hero-overlay-bottom"></div>
+      </div>
+
+      <!-- Hero Cinematic Devotional Content -->
+      <div class="hero-content">
+        <div class="hero-eyebrow">
+          <span>॥ श्री लक्ष्मी नारायणाय नमः ॥</span>
+          <span style="opacity: 0.4;">•</span>
+          <span>कीर्ति नगर श्री सनातन धर्म सभा (पंजी.)</span>
+        </div>
+
+        <h1 class="hero-hindi-title">गीता भवन</h1>
+        <div class="hero-eng-title">GEETA BHAWAN MANDIR</div>
+
+        <p class="hero-devotional-quote">
+          "एक दिव्य स्थल, जहाँ श्रद्धा, भक्ति और श्रीमद्भगवद्गीता का ज्ञान मन को शांति और जीवन को दिशा देता है।"
+        </p>
+
+        <p class="hero-eng-translation">
+          A sacred sanctuary where four decades of unwavering devotion, scriptural wisdom, and compassionate community service bring peace to the mind and light to the soul.
+        </p>
+
+        <!-- Live Darshan Dynamic Status Pill -->
+        <div class="hero-live-status">
+          <span class="status-dot" id="hero-status-dot" aria-hidden="true"></span>
+          <span id="hero-status-text">Synchronizing IST Temple Status...</span>
+        </div>
+
+        <!-- Hero Actions -->
+        <div class="hero-actions">
+          <a href="#explore" class="btn btn-primary">
+            <span>Explore the Mandir</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </a>
+          <a href="#timings" class="btn btn-secondary">
+            <span>Aarti & Darshan Timings</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Subtle Scroll Indicator -->
+      <a href="#about" class="hero-scroll-indicator" aria-label="Scroll to read about Geeta Bhawan">
+        <span>Scroll to Enter</span>
+        <div class="scroll-icon" aria-hidden="true">
+          <div class="scroll-dot"></div>
+        </div>
+      </a>
+    </section>
+
+    <!-- =======================================================================
+         SECTION TWO — WELCOME TO GEETA BHAWAN
+         ======================================================================= -->
+    <section class="section-welcome" id="about" aria-labelledby="welcome-heading">
+      <div class="container">
+        <div class="welcome-grid">
+          <!-- Authentic Framed Photograph with Heritage Badge -->
+          <div class="welcome-media">
+            <div class="temple-frame">
+              <img 
+                src="assets/images/hero-mandir.png" 
+                alt="Architectural sanctum view of Geeta Bhawan Mandir" 
+                width="800" 
+                height="520"
+                loading="lazy"
+              >
+            </div>
+            <div class="heritage-badge">
+              <div class="heritage-icon" aria-hidden="true">🕉️</div>
+              <div>
+                <div class="heritage-years">40+ Years</div>
+                <div class="heritage-caption">Of Seva, Satsang & Faith</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Editorial Content Column -->
+          <div class="welcome-content">
+            <span class="section-label">पवित्र परम्परा एवं सेवा • SACRED HERITAGE</span>
+            <h2 class="section-title" id="welcome-heading">
+              A Sanctuary of Faith, Culture, and <span class="gold-accent">Selfless Service</span>
+            </h2>
+
+            <p class="welcome-lead">
+              Geeta Bhawan is a non-profit religious and social institution established under the aegis of <strong>Kirti Nagar Shree Sanatan Dharam Sabha (Regd.)</strong>, serving Delhi with unwavering spiritual dedication.
+            </p>
+
+            <p class="welcome-body">
+              More than 40 years old, Geeta Bhawan has been devotedly working towards keeping alive the vibrant spirit of Sanatan culture in our society. Dedicated to celebrating religion, culture, love, and faith towards our omnipresent God, our temple works untiringly not only on the religious front, but also for cultural and social welfare—regularly organizing community medical camps and humanitarian initiatives.
+            </p>
+
+            <!-- Three Core Pillars -->
+            <div class="pillars-grid">
+              <div class="pillar-item">
+                <div class="pillar-symbol" aria-hidden="true">🪔</div>
+                <div class="pillar-text">
+                  <h4>आध्यात्मिक साधना • Daily Darshan & Satsang</h4>
+                  <p>Daily morning satsang from 7:00 AM to 8:00 AM, divine aartis, and weekly Tuesday Sundarkand Path bring spiritual peace to devotees.</p>
+                </div>
+              </div>
+
+              <div class="pillar-item">
+                <div class="pillar-symbol" aria-hidden="true">🩺</div>
+                <div class="pillar-text">
+                  <h4>सामाजिक कल्याण • Medical & Social Camps</h4>
+                  <p>True worship extends to mankind; the temple regularly organizes free health and medical diagnosis camps for community welfare.</p>
+                </div>
+              </div>
+
+              <div class="pillar-item">
+                <div class="pillar-symbol" aria-hidden="true">🌿</div>
+                <div class="pillar-text">
+                  <h4>संस्कार एवं पूजा • Empowering Vedic Rituals</h4>
+                  <p>Empowering Pujas of your Iṣṭa-devatā including Rudrabhishek, Hawan, and Janampatri guidance by learned pandits.</p>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <a href="#explore" class="btn btn-secondary">
+                <span>Explore Mandir Sanctums</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         SECTION THREE — EXPLORE THE MANDIR (3 LUXURY DISCOVERY CARDS)
+         ======================================================================= -->
+    <section class="section-explore" id="explore" aria-labelledby="explore-heading">
+      <div class="container">
+        <div class="text-center">
+          <span class="section-label">तीर्थ एवं दर्शन • SACRED PATHWAYS</span>
+          <h2 class="section-title" id="explore-heading">
+            Explore <span class="gold-accent">Geeta Bhawan Mandir</span>
+          </h2>
+          <p class="section-subtitle">
+            Three experiential pathways to connect with divine grace, eternal scriptural wisdom, and sacred temple rituals.
+          </p>
+        </div>
+
+        <div class="cards-grid">
+          <!-- Card 1: Mandir Darshan -->
+          <article class="discovery-card">
+            <div class="card-top">
+              <span class="card-tag">8 Sacred Sanctums</span>
+              <div class="card-icon-wrap" aria-hidden="true">🛕</div>
+              <h3 class="card-title">Mandir Darshan<br><span style="font-family: var(--font-devanagari); font-size:1.15rem; font-weight:600; color:var(--gold-warm);">पावन मंदिर दर्शन</span></h3>
+              <p class="card-desc">
+                Experience the divine presence across the holy sanctums of Geeta Bhawan, consecrated with Vedic traditions and daily shringar.
+              </p>
+              <div class="card-subtext">
+                Shri Laxmi Narayan • Shivalaya • Pardeshwar Ling • Mata & Hanuman • Saraswati Mata • Sai Baba • Sheetla Mata • Vishnu Dashavatar
+              </div>
+            </div>
+            <div class="card-action">
+              <a href="mandir-darshan.html" class="card-link" aria-label="Explore the 8 Sacred Sanctums">
+                <span>Explore Sanctums (पावन दर्शन)</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Card 2: Aarti & Pooja -->
+          <article class="discovery-card">
+            <div class="card-top">
+              <span class="card-tag">Daily Rituals & Satsang</span>
+              <div class="card-icon-wrap" aria-hidden="true">🪔</div>
+              <h3 class="card-title">Aarti & Pooja<br><span style="font-family: var(--font-devanagari); font-size:1.15rem; font-weight:600; color:var(--gold-warm);">आरती एवं पूजा सेवा</span></h3>
+              <p class="card-desc">
+                Participate in sacred morning and evening darshan hours, morning satsang discourses, and weekly Tuesday Sundarkand Path.
+              </p>
+              <div class="card-subtext">
+                Morning 5:00 AM – 11:00 AM • Evening 4:30 PM – 9:00 PM • Tuesday Sundarkand Path 6:00 PM
+              </div>
+            </div>
+            <div class="card-action">
+              <a href="#timings" class="card-link">
+                <span>View Timetable & Pujas</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Card 3: Bhagavad Gita Wisdom -->
+          <article class="discovery-card">
+            <div class="card-top">
+              <span class="card-tag">Eternal Scripture</span>
+              <div class="card-icon-wrap" aria-hidden="true">📜</div>
+              <h3 class="card-title">Bhagavad Gita Wisdom<br><span style="font-family: var(--font-devanagari); font-size:1.15rem; font-weight:600; color:var(--gold-warm);">श्रीमद्भगवद्गीता ज्ञानपीठ</span></h3>
+              <p class="card-desc">
+                Immerse your mind in timeless shlokas spoken by Lord Krishna, decoded with authentic Sanskrit, Hindi meaning, and direct life guidance.
+              </p>
+              <div class="card-subtext">
+                Duty without Anxiety • Mastering the Mind • Inner Calm • Surrender & Peace
+              </div>
+            </div>
+            <div class="card-action">
+              <a href="#gita-wisdom" class="card-link">
+                <span>Discover Gita Wisdom</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Card 4: Rishte-Naate Vibhag -->
+          <article class="discovery-card">
+            <div class="card-top">
+              <span class="card-tag">Matrimonial & Matchmaking</span>
+              <div class="card-icon-wrap" aria-hidden="true">💍</div>
+              <h3 class="card-title">Rishte-Naate Vibhag<br><span style="font-family: var(--font-devanagari); font-size:1.15rem; font-weight:600; color:var(--gold-warm);">रिश्ते-नाते विभाग</span></h3>
+              <p class="card-desc">
+                Traditional, family-oriented matchmaking department dedicated to helping individuals and families find compatible life partners rooted in trust, dignity, and cultural values.
+              </p>
+              <div class="card-subtext">
+                Traditional Values • Family Consultation • Confidential Assistance • Personal Guidance
+              </div>
+            </div>
+            <div class="card-action">
+              <a href="rishte-naate.html" class="card-link" aria-label="Explore Rishte-Naate Vibhag">
+                <span>Explore Rishte-Naate (विवाह सेवा)</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         SECTION FOUR — AARTI & DARSHAN TIMINGS (With Live IST Clock)
+         ======================================================================= -->
+    <section class="section-timings" id="timings" aria-labelledby="timings-heading">
+      <div class="container">
+        <div class="text-center">
+          <span class="section-label">दैनिक समय सारणी • OFFICIAL TIMINGS</span>
+          <h2 class="section-title" id="timings-heading">
+            Aarti, Darshan & <span class="gold-accent">Pooja Services</span>
+          </h2>
+          <p class="section-subtitle">
+            Accurate, verified temple hours and religious activities observed at Geeta Bhawan, Kirti Nagar.
+          </p>
+        </div>
+
+        <!-- Live IST Clock and Dynamic Darshan Status Bar -->
+        <div class="clock-status-bar">
+          <div class="clock-display">
+            <div class="clock-icon" aria-hidden="true">⏰</div>
+            <div class="clock-details">
+              <div class="clock-time" id="ist-live-time">--:--:-- -- IST</div>
+              <div class="clock-meta" id="ist-live-meta">Loading Indian Standard Time...</div>
+            </div>
+          </div>
+
+          <div class="dynamic-darshan-status" id="dynamic-darshan-status">
+            <span class="status-dot"></span>
+            <span class="status-badge-live">Calculating Darshan Status...</span>
+          </div>
+        </div>
+
+        <!-- Timetable Grid: Regular Hours + Navratri/Services -->
+        <div class="timings-grid">
+          <!-- Left Column: Regular Daily Schedule -->
+          <div class="schedule-card">
+            <div class="schedule-header">
+              <h3>दैनिक दर्शन एवं सत्संग (Regular Schedule)</h3>
+              <span class="verified-pill">✓ Verified Hours</span>
+            </div>
+
+            <!-- Morning Darshan -->
+            <div class="time-row">
+              <div class="time-row-left">
+                <span class="time-label-hindi">प्रातः दर्शन (Morning Darshan)</span>
+                <span class="time-label-eng">Temple doors open for morning prayers</span>
+              </div>
+              <div>
+                <div class="time-val">5:00 AM – 11:00 AM</div>
+                <div class="time-subnote text-center">Daily</div>
+              </div>
+            </div>
+
+            <!-- Morning Satsang -->
+            <div class="time-row">
+              <div class="time-row-left">
+                <span class="time-label-hindi">प्रातः सत्संग (Morning Satsang)</span>
+                <span class="time-label-eng">Sacred devotional discourses & recitation</span>
+              </div>
+              <div>
+                <div class="time-val">7:00 AM – 8:00 AM</div>
+                <div class="time-subnote text-center">Daily</div>
+              </div>
+            </div>
+
+            <!-- Midday Pat Closing Note -->
+            <div class="time-row" style="background: rgba(15, 7, 3, 0.4); padding: 0.85rem 0.5rem; border-radius: 4px;">
+              <div class="time-row-left">
+                <span class="time-label-hindi" style="color: var(--text-muted); font-size: 0.95rem;">मध्य पट बंद (Afternoon Intermission)</span>
+                <span class="time-label-eng">Temple sanctum closed for bhog & rest</span>
+              </div>
+              <div>
+                <div class="time-val" style="color: var(--text-muted); font-size: 0.95rem;">11:00 AM – 4:30 PM</div>
+              </div>
+            </div>
+
+            <!-- Evening Darshan -->
+            <div class="time-row">
+              <div class="time-row-left">
+                <span class="time-label-hindi">संध्या दर्शन (Evening Darshan)</span>
+                <span class="time-label-eng">Temple doors open for evening prayers & aarti</span>
+              </div>
+              <div>
+                <div class="time-val">4:30 PM – 9:00 PM</div>
+                <div class="time-subnote text-center">Daily</div>
+              </div>
+            </div>
+
+            <!-- Weekly Tuesday Sundarkand -->
+            <div class="time-row" style="border-top: 1px dashed var(--gold-border); margin-top: 0.5rem;">
+              <div class="time-row-left">
+                <span class="time-label-hindi" style="color: var(--gold-warm);">श्री सुंदरकांड पाठ (Sundarkand Path)</span>
+                <span class="time-label-eng">Weekly auspicious recitation dedicated to Shri Hanuman</span>
+              </div>
+              <div>
+                <div class="time-val" style="color: var(--gold-light);">Every Tuesday • 6:00 PM</div>
+                <div class="time-subnote text-center">Concludes with Aarti & Prasad</div>
+              </div>
+            </div>
+
+            <!-- Aarti Schedule Verification Notice -->
+            <div style="margin-top: 1.5rem; padding: 0.9rem; background: rgba(234, 179, 8, 0.05); border: 1px solid rgba(234, 179, 8, 0.2); border-radius: 6px; font-size: 0.82rem; color: var(--text-muted); line-height: 1.6;">
+              <strong style="color: var(--gold-light);">Note on Daily Aarti Ceremonies:</strong>
+              The detailed daily ritual timings (Mangala, Shringar, Bhog, and Maha Sandhya Aarti) are coordinated with the Mandir Karyalay. Devotees may contact the office directly for daily ritual participation.
+            </div>
+          </div>
+
+          <!-- Right Column: Special Navratri Schedule + Religious Services -->
+          <div>
+            <!-- Special Navratri Box -->
+            <div class="special-schedule-box">
+              <span class="special-badge">Special Navratri Schedule</span>
+              <h3 class="special-title">श्री नवरात्रि महोत्सव समय</h3>
+              <p class="special-desc">
+                During both Chaitra and Sharad Navratri paksh, special religious schedules are observed:
+              </p>
+
+              <div class="special-times-list">
+                <div class="special-time-item">
+                  <span class="special-time-label">Morning Religious Activities:</span>
+                  <span class="special-time-val">6:00 AM</span>
+                </div>
+                <div class="special-time-item">
+                  <span class="special-time-label">Dev Pujan (देव पूजन):</span>
+                  <span class="special-time-val">6:30 AM</span>
+                </div>
+                <div class="special-time-item">
+                  <span class="special-time-label">Evening Religious Activities:</span>
+                  <span class="special-time-val">7:30 PM – 10:30 PM</span>
+                </div>
+              </div>
+
+              <div class="special-callout">
+                <strong>Important Closing Arrangement:</strong> During Navratri, the regular 9:00 PM closing time does not apply; the temple remains open until special evening programmes conclude (~10:30 PM).
+              </div>
+            </div>
+
+            <!-- Religious Services Available -->
+            <div class="services-box">
+              <h4>धार्मिक पूजा सेवा (Religious Services)</h4>
+              <p style="font-size: 0.88rem; color: var(--text-secondary); margin-bottom: 1rem;">
+                Traditional Hindu Vedic rituals arranged by experienced temple pandits:
+              </p>
+
+              <div class="services-tags">
+                <span class="service-tag">🕉️ Rudrabhishek (रुद्राभिषेक)</span>
+                <span class="service-tag">🔥 Havan / Hawan (हवन)</span>
+                <span class="service-tag">📖 Sundarkand Path (सुंदरकांड पाठ)</span>
+                <span class="service-tag">📜 Janampatri (जन्मपत्री)</span>
+                <span class="service-tag">🌸 Puja-Path (पूजा-पाठ)</span>
+                <span class="service-tag">🪔 Special Occasion Pujas</span>
+              </div>
+
+              <p class="service-cta-note">
+                For Puja bookings, dakshina, and inquiries, devotees are requested to contact the <strong>Mandir Karyalay</strong>:
+              </p>
+
+              <div style="margin-top: 1rem; display: flex; gap: 0.75rem; flex-wrap: wrap;">
+                <a href="tel:01147000208" class="btn btn-primary" style="padding: 0.6rem 1.1rem; font-size: 0.8rem;">
+                  📞 011-47000208
+                </a>
+                <a href="tel:8810401428" class="btn btn-secondary" style="padding: 0.6rem 1.1rem; font-size: 0.8rem;">
+                  📱 8810401428
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         SECTION FIVE — BHAGAVAD GITA WISDOM ORACLE
+         ======================================================================= -->
+    <section class="section-gita" id="gita-wisdom" aria-labelledby="gita-heading">
+      <div class="container">
+        <div class="text-center">
+          <span class="section-label">गीता ज्ञानपीठ • SACRED SCRIPTURE</span>
+          <h2 class="section-title" id="gita-heading">
+            Bhagavad Gita <span class="gold-accent">Wisdom Oracle</span>
+          </h2>
+          <p class="section-subtitle">
+            Timeless verses from the Gita broken down with original Sanskrit, IAST transliteration, Hindi meaning, and direct life guidance.
+          </p>
+        </div>
+
+        <!-- Life Situation Categories Tabs -->
+        <div class="gita-categories" role="tablist" aria-label="Gita Categories">
+          <button class="gita-tab-btn active" data-category="duty" role="tab">Duty & Action (कर्मयोग)</button>
+          <button class="gita-tab-btn" data-category="mind" role="tab">Mind Mastery (आत्मसंयम)</button>
+          <button class="gita-tab-btn" data-category="peace" role="tab">Inner Peace (शांति)</button>
+          <button class="gita-tab-btn" data-category="surrender" role="tab">Surrender (शरण एवं भक्ति)</button>
+        </div>
+
+        <!-- Dynamic Shloka Card Component -->
+        <article class="shloka-card" id="gita-verse-display" aria-live="polite">
+          <!-- Rendered dynamically by gita.js -->
+        </article>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         SECTION SIX — FESTIVALS & CELEBRATIONS
+         ======================================================================= -->
+    <section class="section-festivals" id="festivals" aria-labelledby="festivals-heading">
+      <div class="container">
+        <div class="text-center">
+          <span class="section-label">उत्सव एवं पर्व • DEVOTIONAL CELEBRATIONS</span>
+          <h2 class="section-title" id="festivals-heading">
+            Festivals Celebrated at <span class="gold-accent">Geeta Bhawan</span>
+          </h2>
+          <p class="section-subtitle">
+            Throughout the year, our temple joyously observes sacred Hindu festivals with special darshan, bhajans, and prasad distribution.
+          </p>
+        </div>
+
+        <div class="festivals-grid">
+          <!-- Festival 1: Navratri -->
+          <article class="festival-card">
+            <div>
+              <span class="festival-badge">Twice Yearly Observance</span>
+              <h3 class="festival-title-hindi">श्री नवरात्रि महोत्सव</h3>
+              <div class="festival-title-eng">CHAITRA & SHARAD NAVRATRI</div>
+              <p class="festival-desc">
+                Celebrated in both Paksh with morning Dev Pujan at 6:30 AM, special devotional programmes every evening (7:30 PM – 10:30 PM), and extended temple darshan hours.
+              </p>
+            </div>
+            <div class="festival-notice">
+              <span>✓ Confirmed temple schedule active</span>
+            </div>
+          </article>
+
+          <!-- Festival 2: Janmashtami -->
+          <article class="festival-card">
+            <div>
+              <span class="festival-badge">Bhadrapada Krishna Paksh</span>
+              <h3 class="festival-title-hindi">श्री कृष्ण जन्माष्टमी</h3>
+              <div class="festival-title-eng">SHRI KRISHNA JANMASHTAMI</div>
+              <p class="festival-desc">
+                Grand midnight celebration commemorating the divine advent of Lord Krishna. Featuring floral shringar, midnight maha aarti, and traditional Makhan-Mishri bhog.
+              </p>
+            </div>
+            <div class="festival-notice">
+              <span>📅 Detailed programme released per Tithi</span>
+            </div>
+          </article>
+
+          <!-- Festival 3: Maha Shivratri -->
+          <article class="festival-card">
+            <div>
+              <span class="festival-badge">Phalguna Krishna Paksh</span>
+              <h3 class="festival-title-hindi">महा शिवरात्रि</h3>
+              <div class="festival-title-eng">MAHA SHIVRATRI</div>
+              <p class="festival-desc">
+                Auspicious night of Lord Shiva with continuous Jalabhishek and Rudrabhishek upon the holy <strong>Pardeshwar Ling</strong> and Shivalaya sanctums, accompanied by devotional chanting.
+              </p>
+            </div>
+            <div class="festival-notice">
+              <span>📅 Special 4-Pahar darshan arrangements</span>
+            </div>
+          </article>
+
+          <!-- Festival 4: Shri Ram Navami & Hanuman Jayanti -->
+          <article class="festival-card">
+            <div>
+              <span class="festival-badge">Chaitra Paksh</span>
+              <h3 class="festival-title-hindi">श्री राम नवमी व हनुमान जयंती</h3>
+              <div class="festival-title-eng">RAM NAVAMI & HANUMAN JAYANTI</div>
+              <p class="festival-desc">
+                Special Ramcharitmanas recitations, grand Chola offering at the Mata & Hanuman Mandir, and divine prasad distribution for all visiting devotees.
+              </p>
+            </div>
+            <div class="festival-notice">
+              <span>📅 Special Tuesday Sundarkand Path</span>
+            </div>
+          </article>
+
+          <!-- Festival 5: Diwali & Govardhan Puja -->
+          <article class="festival-card">
+            <div>
+              <span class="festival-badge">Kartika Paksh</span>
+              <h3 class="festival-title-hindi">दीपावली एवं गोवर्धन पूजा</h3>
+              <div class="festival-title-eng">DEEPAWALI & ANNAKUT MAHOTSAV</div>
+              <p class="festival-desc">
+                The temple complex shines resplendent with hundreds of ghee lamps, special Lakshmi-Narayan Pujan, and a grand 56-Bhog Annakut offering for devotees.
+              </p>
+            </div>
+            <div class="festival-notice">
+              <span>📅 Programme confirmed by Mandir Karyalay</span>
+            </div>
+          </article>
+
+          <!-- Festival 6: Annual Calendar Note -->
+          <article class="festival-card" style="background: linear-gradient(135deg, rgba(36, 18, 8, 0.7) 0%, rgba(24, 12, 5, 0.8) 100%);">
+            <div>
+              <span class="festival-badge" style="color: var(--gold-light); border-color: var(--gold-warm);">Official Notice</span>
+              <h3 class="festival-title-hindi">पर्व एवं उत्सव सूचना</h3>
+              <div class="festival-title-eng">FESTIVAL INFORMATION DESK</div>
+              <p class="festival-desc">
+                Specific dates, ritual timings, and special darshan protocols for all Hindu festivals are verified and announced by the Mandir Karyalay prior to each occasion.
+              </p>
+            </div>
+            <div class="festival-notice" style="color: var(--gold-light);">
+              <a href="#visit" style="text-decoration: underline;">Contact Mandir Karyalay for Details &rarr;</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         SECTION SEVEN — VISIT GEETA BHAWAN
+         ======================================================================= -->
+    <section class="section-visit" id="visit" aria-labelledby="visit-heading">
+      <div class="container">
+        <div class="text-center">
+          <span class="section-label">मंदिर आगमन • PLAN YOUR VISIT</span>
+          <h2 class="section-title" id="visit-heading">
+            Visit <span class="gold-accent">Geeta Bhawan</span>
+          </h2>
+          <p class="section-subtitle">
+            We welcome all devotees to experience peaceful darshan, sacred satsang, and seek the blessings of Shri Lakshmi Narayan.
+          </p>
+        </div>
+
+        <div class="visit-grid">
+          <!-- Area One: Verified Contact & Address -->
+          <div class="visit-info-card">
+            <!-- Temple Address -->
+            <div class="info-item">
+              <div class="info-icon" aria-hidden="true">📍</div>
+              <div class="info-text">
+                <h4>Temple Address (पता)</h4>
+                <p>
+                  <strong>Geeta Bhawan Mandir</strong><br>
+                  A-35, Kirti Nagar,<br>
+                  New Delhi – 110015, India
+                </p>
+              </div>
+            </div>
+
+            <!-- Darshan Hours -->
+            <div class="info-item">
+              <div class="info-icon" aria-hidden="true">🕰️</div>
+              <div class="info-text">
+                <h4>Darshan Hours (दर्शन समय)</h4>
+                <p>
+                  Morning: <strong>5:00 AM – 11:00 AM</strong><br>
+                  Evening: <strong>4:30 PM – 9:00 PM</strong><br>
+                  Morning Satsang: <strong>7:00 AM – 8:00 AM</strong>
+                </p>
+              </div>
+            </div>
+
+            <!-- Mandir Karyalay Contact -->
+            <div class="info-item">
+              <div class="info-icon" aria-hidden="true">📞</div>
+              <div class="info-text">
+                <h4>Mandir Karyalay (कार्यालय संपर्क)</h4>
+                <p>
+                  Phone: <a href="tel:01147000208"><strong>011-47000208</strong></a><br>
+                  Mobile: <a href="tel:8810401428"><strong>+91 8810401428</strong></a><br>
+                  Email: <a href="mailto:info@geetabhawanshaadi.com"><strong>info@geetabhawanshaadi.com</strong></a>
+                </p>
+              </div>
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="visit-actions">
+              <a 
+                href="https://maps.google.com/?q=Geeta+Bhawan+A-35+Kirti+Nagar+New+Delhi+110015" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                class="btn btn-primary"
+              >
+                <span>Google Maps Directions</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/>
+                </svg>
+              </a>
+              <a href="tel:01147000208" class="btn btn-secondary">
+                <span>Call Mandir</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Area Two: Location Card & Quick Devotee Enquiry -->
+          <div class="location-card">
+            <div>
+              <h3>How to Reach Geeta Bhawan</h3>
+              <div class="location-features">
+                <div class="feature-row">
+                  <span class="feature-bullet">🚇</span>
+                  <span><strong>By Delhi Metro:</strong> Near Kirti Nagar Metro Station (Interchange for Blue Line & Green Line).</span>
+                </div>
+                <div class="feature-row">
+                  <span class="feature-bullet">🚗</span>
+                  <span><strong>By Road:</strong> Centrally accessible via Ring Road, Shivaji Marg, and Patel Road in West Delhi.</span>
+                </div>
+                <div class="feature-row">
+                  <span class="feature-bullet">🏛️</span>
+                  <span><strong>Landmark:</strong> Kirti Nagar Shree Sanatan Dharam Sabha (Regd.), Block A-35.</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Quick Inquiry Box -->
+            <div class="inquiry-box">
+              <h4>Devotee Enquiry & Puja Booking</h4>
+              <p>Looking to arrange a Rudrabhishek, Hawan, or special Puja? Connect directly with the Mandir Karyalay.</p>
+
+              <form id="quick-inquiry-form" aria-label="Devotee Inquiry Form">
+                <div style="display: flex; gap: 0.6rem; margin-bottom: 0.75rem; flex-wrap: wrap;">
+                  <input 
+                    type="text" 
+                    id="inquiry-name" 
+                    placeholder="Your Name (आपका नाम)" 
+                    required 
+                    style="flex: 1; min-width: 140px; padding: 0.55rem 0.85rem; border-radius: 4px; border: 1px solid var(--gold-border); background: rgba(24, 12, 5, 0.8); color: var(--text-primary); font-family: inherit; font-size: 0.86rem;"
+                  >
+                  <input 
+                    type="tel" 
+                    id="inquiry-phone" 
+                    placeholder="Phone (फ़ोन नंबर)" 
+                    required 
+                    style="flex: 1; min-width: 140px; padding: 0.55rem 0.85rem; border-radius: 4px; border: 1px solid var(--gold-border); background: rgba(24, 12, 5, 0.8); color: var(--text-primary); font-family: inherit; font-size: 0.86rem;"
+                  >
+                </div>
+                <div style="margin-bottom: 0.75rem;">
+                  <select 
+                    id="inquiry-service" 
+                    style="width: 100%; padding: 0.55rem 0.85rem; border-radius: 4px; border: 1px solid var(--gold-border); background: rgba(24, 12, 5, 0.8); color: var(--text-primary); font-family: inherit; font-size: 0.86rem;"
+                  >
+                    <option value="Rudrabhishek">Rudrabhishek (रुद्राभिषेक)</option>
+                    <option value="Havan">Hawan / Havan (हवन)</option>
+                    <option value="Sundarkand">Sundarkand Path (सुंदरकांड पाठ)</option>
+                    <option value="Janampatri">Janampatri Consultation (जन्मपत्री)</option>
+                    <option value="Special Puja">Special Occasion Puja (विशेष पूजा)</option>
+                    <option value="General">General Inquiry (सामान्य जानकारी)</option>
+                  </select>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%; padding: 0.65rem 1rem;">
+                  Submit & Connect to Karyalay
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =========================================================================
+       SECTION EIGHT — GLOBAL FOOTER
+       ========================================================================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Brand & Credo -->
+        <div class="footer-brand">
+          <div class="footer-brand-header">
+            <div class="footer-logo">
+              <img src="assets/images/mandir-logo.jpeg" alt="Geeta Bhawan Mandir Emblem" width="58" height="58">
+            </div>
+            <div>
+              <div class="footer-title-hindi">गीता भवन</div>
+              <div class="footer-title-eng">GEETA BHAWAN MANDIR</div>
+              <div class="footer-org">Kirti Nagar Shree Sanatan Dharam Sabha (Regd.)</div>
+            </div>
+          </div>
+          <p class="footer-credo">
+            "DEDICATED TO CELEBRATE RELIGION, CULTURE, LOVE AND FAITH TOWARDS OUR OMNIPRESENT GOD."
+          </p>
+          <div style="font-size: 0.8rem; color: var(--text-muted);">
+            A 40+ year registered non-profit organization serving spiritual growth and social welfare in New Delhi.
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <nav class="footer-nav" aria-label="Footer Navigation">
+            <a href="#hero">Home (मुख्य पृष्ठ)</a>
+            <a href="#about">About Us (परिचय)</a>
+            <a href="mandir-darshan.html">Mandir Darshan (दर्शन)</a>
+            <a href="rishte-naate.html">Rishte-Naate Vibhag (रिश्ते-नाते)</a>
+            <a href="#timings">Aarti & Timings (समय सारणी)</a>
+            <a href="#festivals">Festivals (पर्व एवं उत्सव)</a>
+            <a href="#" class="phase2-future-link" data-feature="Photo Gallery (चित्र दीर्घा)">Gallery (चित्र दीर्घा)</a>
+            <a href="#visit">Contact Us (संपर्क)</a>
+          </nav>
+        </div>
+
+        <!-- Sacred Sanctums -->
+        <div class="footer-col">
+          <h4>६ पावन मंदिर</h4>
+          <div class="footer-nav">
+            <a href="#explore" class="open-sanctums-btn">Shri Laxmi Narayan</a>
+            <a href="#explore" class="open-sanctums-btn">Shivalaya (शिवालय)</a>
+            <a href="#explore" class="open-sanctums-btn">Mata & Hanuman Mandir</a>
+            <a href="#explore" class="open-sanctums-btn">Saraswati Mata Mandir</a>
+            <a href="#explore" class="open-sanctums-btn">Pardeshwar Ling</a>
+            <a href="#explore" class="open-sanctums-btn">Vishnu Avatar</a>
+          </div>
+        </div>
+
+        <!-- Verified Contact Details -->
+        <div class="footer-col">
+          <h4>Mandir Karyalay</h4>
+          <div class="footer-contact-list">
+            <div>
+              <strong style="color: var(--text-secondary);">Address:</strong><br>
+              A-35, Kirti Nagar,<br>
+              New Delhi – 110015
+            </div>
+            <div>
+              <strong style="color: var(--text-secondary);">Telephone:</strong><br>
+              <a href="tel:01147000208" style="color: var(--gold-light);">011-47000208</a><br>
+              <a href="tel:8810401428" style="color: var(--gold-light);">+91 8810401428</a>
+            </div>
+            <div>
+              <strong style="color: var(--text-secondary);">Email:</strong><br>
+              <a href="mailto:info@geetabhawanshaadi.com" style="color: var(--gold-light);">info@geetabhawanshaadi.com</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Bottom Bar -->
+      <div class="footer-bottom">
+        <div>
+          © 2026 Geeta Bhawan Mandir (Kirti Nagar Shree Sanatan Dharam Sabha Regd.). All rights reserved.
+        </div>
+        <div style="display: flex; gap: 1.25rem;">
+          <a href="#hero" style="color: var(--gold-warm);">Back to Top ↑</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- =========================================================================
+       MODAL: SACRED SANCTUMS (पावन मंदिर दर्शन विवरण)
+       ========================================================================= -->
+  <div class="modal-overlay" id="sanctums-modal" role="dialog" aria-modal="true" aria-labelledby="modal-sanctum-title" aria-hidden="true">
+    <div class="modal-container">
+      <button class="modal-close-btn" id="close-sanctums-btn" aria-label="Close Sanctums Dialog">&times;</button>
+      <h3 class="modal-title" id="modal-sanctum-title">पावन मंदिर दर्शन • The Sacred Sanctums</h3>
+      <p class="modal-subtitle">
+        Geeta Bhawan houses eight holy sanctum sanctorums consecrated under ancient Vedic traditions:
+      </p>
+
+      <div class="sanctum-item">
+        <div class="sanctum-num">१</div>
+        <div class="sanctum-details">
+          <h5>श्री लक्ष्मी नारायण मंदिर</h5>
+          <span>Shri Laxmi Narayan Mandir</span>
+          <p>The principal sanctum dedicated to Bhagwan Vishnu, Devi Lakshmi, Radha-Krishna, and Ram Darbar in celestial golden shringar.</p>
+        </div>
+      </div>
+
+      <div class="sanctum-item">
+        <div class="sanctum-num">२</div>
+        <div class="sanctum-details">
+          <h5>शिवालय</h5>
+          <span>Shivalaya & Shivalingam</span>
+          <p>The sacred sanctum of Mahadev Shiva, Mata Parvati, Lord Ganesha, and holy Shivalingam for daily Jalabhishek.</p>
+        </div>
+      </div>
+
+      <div class="sanctum-item">
+        <div class="sanctum-num">३</div>
+        <div class="sanctum-details">
+          <h5>पारदेश्वर शिवलिंग</h5>
+          <span>Pardeshwar Ling (Mercury Shivalinga)</span>
+          <p>The rare and revered mercury (Paarad) Shivalinga consecrated in a Himalayan cave sanctum guarded by Nagraj.</p>
+        </div>
+      </div>
+
+      <div class="sanctum-item">
+        <div class="sanctum-num">४</div>
+        <div class="sanctum-details">
+          <h5>माँ दुर्गा एवं श्री संकटमोचन हनुमान मंदिर</h5>
+          <span>Mata and Hanuman Mandir</span>
+          <p>Opulent gold-vaulted ceiling sanctum enshrining Sherawali Mata Durga and Veer Hanuman Ji.</p>
+        </div>
+      </div>
+
+      <div class="sanctum-item">
+        <div class="sanctum-num">५</div>
+        <div class="sanctum-details">
+          <h5>माँ सरस्वती मंदिर</h5>
+          <span>Saraswati Mata Mandir</span>
+          <p>Sanctum of Devi Saraswati, Goddess of wisdom, eloquence, arts, and music, holding the sacred Veena.</p>
+        </div>
+      </div>
+
+      <div class="sanctum-item">
+        <div class="sanctum-num">६</div>
+        <div class="sanctum-details">
+          <h5>श्री साईं बाबा मंदिर</h5>
+          <span>Shri Sai Baba Mandir</span>
+          <p>Sanctum of Shri Sai Baba of Shirdi, radiating the eternal teachings of "श्रद्धा" (Faith) and "सबूरी" (Patience).</p>
+        </div>
+      </div>
+
+      <div class="sanctum-item">
+        <div class="sanctum-num">७</div>
+        <div class="sanctum-details">
+          <h5>माँ शीतला मंदिर</h5>
+          <span>Sheetla Mata Mandir</span>
+          <p>Revered sanctum dedicated to Mata Sheetla Ji, worshipped for health, maternal protection, and peace.</p>
+        </div>
+      </div>
+
+      <div class="sanctum-item">
+        <div class="sanctum-num">८</div>
+        <div class="sanctum-details">
+          <h5>भगवान विष्णु के दशावतार</h5>
+          <span>Vishnu Dashavatar Sanctum</span>
+          <p>Divine murti holding the Sudarshana Chakra aloft, honoring the ten cosmic incarnations of Bhagwan Vishnu.</p>
+        </div>
+      </div>
+
+      <div style="margin-top: 1.75rem; display: flex; gap: 0.75rem; justify-content: center; flex-wrap: wrap;">
+        <a href="mandir-darshan.html" class="btn btn-primary">
+          <span>Explore Full Darshan Gallery &rarr;</span>
+        </a>
+        <a href="#timings" class="btn btn-secondary" onclick="document.getElementById('close-sanctums-btn').click();">
+          <span>View Timings</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       MODAL: PHASE 02 FUTURE SCOPE NOTICE (Honest & Transparent)
+       ========================================================================= -->
+  <div class="modal-overlay" id="phase2-modal" role="dialog" aria-modal="true" aria-labelledby="modal-phase2-title" aria-hidden="true">
+    <div class="modal-container" style="max-width: 520px; text-align: center;">
+      <button class="modal-close-btn" id="close-phase2-btn" aria-label="Close Dialog">&times;</button>
+      <div style="font-size: 2.5rem; margin-bottom: 0.75rem;" aria-hidden="true">🛕</div>
+      <h3 class="modal-title" id="modal-phase2-title">Phase 02 Experience</h3>
+      <p style="font-size: 1.05rem; color: var(--gold-light); margin-bottom: 0.5rem; font-weight: 600;" id="phase2-feature-name">
+        Upcoming Section
+      </p>
+      <p class="modal-subtitle">
+        This dedicated experience will be launched in Phase 02 of the Geeta Bhawan digital initiative. For immediate inquiries, please reach out to the Mandir Karyalay.
+      </p>
+      <div style="display: flex; gap: 0.75rem; justify-content: center; margin-top: 1.5rem;">
+        <a href="tel:01147000208" class="btn btn-primary">
+          📞 Call Karyalay
+        </a>
+        <button class="btn btn-secondary" onclick="document.getElementById('close-phase2-btn').click();">
+          Close
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       GLOBAL TOAST NOTIFICATION
+       ========================================================================= -->
+  <div class="toast-notice" id="toast-notice" role="status" aria-live="polite">
+    <span aria-hidden="true">🕉️</span>
+    <span class="toast-text">Notification message</span>
+  </div>
+
+  <!-- Universal Client Bundle (Compatible with HTTP servers and local file://) -->
+  <script src="assets/js/bundle.js"></script>
+</body>
+</html>
